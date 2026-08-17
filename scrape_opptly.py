@@ -96,13 +96,34 @@ def parse_rows(html: str, base_url: str):
     return records
 
 
-def download_resume(url: str, session: requests.Session, cache: dict) -> bytes:
+def download_resume(
+    url: str,
+    session: requests.Session,
+    cache: dict,
+    retries: int = 3,
+    backoff: float = 2.0,
+) -> bytes:
     if url in cache:
         return cache[url]
-    resp = session.get(url, headers={"User-Agent": USER_AGENT}, timeout=60)
-    resp.raise_for_status()
-    cache[url] = resp.content
-    return resp.content
+
+    last_exc = None
+    for attempt in range(1, retries + 1):
+        try:
+            resp = session.get(url, headers={"User-Agent": USER_AGENT}, timeout=60)
+            resp.raise_for_status()
+            cache[url] = resp.content
+            return resp.content
+        except requests.RequestException as exc:
+            last_exc = exc
+            if attempt < retries:
+                wait = backoff * (2 ** (attempt - 1))
+                print(
+                    f"  !! attempt {attempt}/{retries} failed ({exc}), retrying in {wait:.1f}s",
+                    file=sys.stderr,
+                )
+                time.sleep(wait)
+
+    raise last_exc
 
 
 def build_contentversion(record: dict, resume_bytes: bytes) -> dict:
@@ -174,6 +195,18 @@ def main():
         action="store_true",
         help="Process rows sorted by Full name in descending order",
     )
+    parser.add_argument(
+        "--retries",
+        type=int,
+        default=3,
+        help="Number of attempts when fetching a resume before giving up",
+    )
+    parser.add_argument(
+        "--retry-backoff",
+        type=float,
+        default=2.0,
+        help="Base seconds to wait between resume fetch retries (doubles each attempt)",
+    )
     args = parser.parse_args()
 
     session = requests.Session()
@@ -217,9 +250,15 @@ def main():
             file=sys.stderr,
         )
         try:
-            resume_bytes = download_resume(record["resume_url"], session, cache)
+            resume_bytes = download_resume(
+                record["resume_url"],
+                session,
+                cache,
+                retries=args.retries,
+                backoff=args.retry_backoff,
+            )
         except requests.RequestException as exc:
-            print(f"  !! failed to download resume: {exc}", file=sys.stderr)
+            print(f"  !! failed to download resume after {args.retries} attempts: {exc}", file=sys.stderr)
             continue
 
         output.append(build_contentversion(record, resume_bytes))
