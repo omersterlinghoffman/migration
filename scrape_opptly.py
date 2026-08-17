@@ -182,7 +182,7 @@ def main():
         "--limit", type=int, default=None, help="Only process the first N rows (testing)"
     )
     parser.add_argument(
-        "--delay", type=float, default=0.5, help="Seconds to wait between resume downloads"
+        "--delay", type=float, default=5.0, help="Seconds to wait between resume downloads"
     )
     parser.add_argument(
         "--save-every",
