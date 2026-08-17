@@ -120,6 +120,11 @@ def build_contentversion(record: dict, resume_bytes: bytes) -> dict:
     }
 
 
+def write_output(path: str, output: list) -> None:
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("url", help="Opptly PublicLists URL to scrape")
@@ -131,6 +136,12 @@ def main():
     )
     parser.add_argument(
         "--delay", type=float, default=0.5, help="Seconds to wait between resume downloads"
+    )
+    parser.add_argument(
+        "--save-every",
+        type=int,
+        default=100,
+        help="Write a checkpoint of the JSON output every N processed records",
     )
     args = parser.parse_args()
 
@@ -145,20 +156,23 @@ def main():
     if args.limit:
         rows = rows[: args.limit]
 
+    total = len(rows)
     cache = {}
     seen_person_ids = set()
     output = []
-    for i, record in enumerate(rows, 1):
+    for current, record in enumerate(rows, 1):
         person_id = record["person_id"]
+        progress = f"[current {current}/{total} | processed {len(output)}]"
+
         if person_id and person_id in seen_person_ids:
             print(
-                f"[{i}/{len(rows)}] skip (duplicate OpptlyPersonId {person_id})",
+                f"{progress} skip (duplicate OpptlyPersonId {person_id})",
                 file=sys.stderr,
             )
             continue
 
         print(
-            f"[{i}/{len(rows)}] {record['full_name']} - {record['resume_filename']}",
+            f"{progress} {record['full_name']} - {record['resume_filename']}",
             file=sys.stderr,
         )
         try:
@@ -170,10 +184,14 @@ def main():
         output.append(build_contentversion(record, resume_bytes))
         if person_id:
             seen_person_ids.add(person_id)
+
+        if len(output) % args.save_every == 0:
+            write_output(args.output, output)
+            print(f"  -- checkpoint saved ({len(output)} records) --", file=sys.stderr)
+
         time.sleep(args.delay)
 
-    with open(args.output, "w", encoding="utf-8") as f:
-        json.dump(output, f, indent=2)
+    write_output(args.output, output)
 
     print(f"Wrote {len(output)} ContentVersion records to {args.output}", file=sys.stderr)
 
