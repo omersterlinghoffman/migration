@@ -9,7 +9,6 @@ Usage:
 
 Each JSON record looks like:
     {
-        "PersonId": "REPLACE_PERSON_ID",      # placeholder, filled in later
         "FirstPublishLocationId": null,        # not published yet
         "Title": "Chevaundae-Moore-resume",
         "PathOnClient": "Chevaundae-Moore-resume.pdf",
@@ -19,6 +18,9 @@ Each JSON record looks like:
         "JobId": "179306",
         "JobTitle": "Engineering Technician"
     }
+
+One record is emitted per unique OpptlyPersonId (a candidate linked to
+multiple jobs only appears once).
 """
 
 import argparse
@@ -107,7 +109,6 @@ def build_contentversion(record: dict, resume_bytes: bytes) -> dict:
     title = filename.rsplit(".", 1)[0] if "." in filename else filename
 
     return {
-        "PersonId": "REPLACE_PERSON_ID",
         "FirstPublishLocationId": None,
         "Title": title,
         "PathOnClient": filename,
@@ -145,8 +146,17 @@ def main():
         rows = rows[: args.limit]
 
     cache = {}
+    seen_person_ids = set()
     output = []
     for i, record in enumerate(rows, 1):
+        person_id = record["person_id"]
+        if person_id and person_id in seen_person_ids:
+            print(
+                f"[{i}/{len(rows)}] skip (duplicate OpptlyPersonId {person_id})",
+                file=sys.stderr,
+            )
+            continue
+
         print(
             f"[{i}/{len(rows)}] {record['full_name']} - {record['resume_filename']}",
             file=sys.stderr,
@@ -158,6 +168,8 @@ def main():
             continue
 
         output.append(build_contentversion(record, resume_bytes))
+        if person_id:
+            seen_person_ids.add(person_id)
         time.sleep(args.delay)
 
     with open(args.output, "w", encoding="utf-8") as f:
