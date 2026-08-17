@@ -26,6 +26,7 @@ multiple jobs only appears once).
 import argparse
 import base64
 import json
+import os
 import sys
 import time
 from urllib.parse import urljoin
@@ -120,9 +121,34 @@ def build_contentversion(record: dict, resume_bytes: bytes) -> dict:
     }
 
 
-def write_output(path: str, output: list) -> None:
+def dedupe_by_person_id(output: list) -> list:
+    seen = set()
+    deduped = []
+    for r in output:
+        pid = r.get("OpptlyPersonId")
+        if pid and pid in seen:
+            continue
+        if pid:
+            seen.add(pid)
+        deduped.append(r)
+    return deduped
+
+
+def write_output(path: str, output: list) -> list:
+    output = dedupe_by_person_id(output)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2)
+    return output
+
+
+def load_existing_output(path: str) -> list:
+    if not os.path.exists(path):
+        return []
+    with open(path, "r", encoding="utf-8") as f:
+        try:
+            return json.load(f)
+        except json.JSONDecodeError:
+            return []
 
 
 def main():
@@ -166,15 +192,22 @@ def main():
 
     total = len(rows)
     cache = {}
-    seen_person_ids = set()
-    output = []
+    output = load_existing_output(args.output)
+    seen_person_ids = {r.get("OpptlyPersonId") for r in output if r.get("OpptlyPersonId")}
+    if seen_person_ids:
+        print(
+            f"Loaded {len(output)} existing records from {args.output} "
+            f"({len(seen_person_ids)} unique OpptlyPersonId already saved)",
+            file=sys.stderr,
+        )
+
     for current, record in enumerate(rows, 1):
         person_id = record["person_id"]
         progress = f"[current {current}/{total} | processed {len(output)}]"
 
         if person_id and person_id in seen_person_ids:
             print(
-                f"{progress} skip (duplicate OpptlyPersonId {person_id})",
+                f"{progress} skip (OpptlyPersonId {person_id} already saved)",
                 file=sys.stderr,
             )
             continue
@@ -194,12 +227,12 @@ def main():
             seen_person_ids.add(person_id)
 
         if len(output) % args.save_every == 0:
-            write_output(args.output, output)
+            output = write_output(args.output, output)
             print(f"  -- checkpoint saved ({len(output)} records) --", file=sys.stderr)
 
         time.sleep(args.delay)
 
-    write_output(args.output, output)
+    output = write_output(args.output, output)
 
     print(f"Wrote {len(output)} ContentVersion records to {args.output}", file=sys.stderr)
 
