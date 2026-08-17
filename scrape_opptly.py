@@ -143,6 +143,11 @@ def main():
         default=100,
         help="Write a checkpoint of the JSON output every N processed records",
     )
+    parser.add_argument(
+        "--desc",
+        action="store_true",
+        help="Process rows sorted by Full name in descending order",
+    )
     args = parser.parse_args()
 
     session = requests.Session()
@@ -152,6 +157,9 @@ def main():
 
     rows = parse_rows(html, args.url)
     print(f"Found {len(rows)} candidate rows with resumes", file=sys.stderr)
+
+    if args.desc:
+        rows.sort(key=lambda r: r["full_name"].lower(), reverse=True)
 
     if args.limit:
         rows = rows[: args.limit]
