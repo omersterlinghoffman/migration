@@ -137,8 +137,10 @@ def download_resume(
     session: requests.Session,
     cache: dict,
     retries: int = 3,
-    backoff: float = 2.0,
+    retry_delay: float = 5.0,
 ) -> bytes:
+    """No delay between successful fetches. On failure, wait retry_delay
+    seconds and try again, up to `retries` attempts, then give up."""
     if url in cache:
         return cache[url]
 
@@ -152,12 +154,11 @@ def download_resume(
         except requests.RequestException as exc:
             last_exc = exc
             if attempt < retries:
-                wait = backoff * (2 ** (attempt - 1))
                 print(
-                    f"  !! attempt {attempt}/{retries} failed ({exc}), retrying in {wait:.1f}s",
+                    f"  !! attempt {attempt}/{retries} failed ({exc}), retrying in {retry_delay:.1f}s",
                     file=sys.stderr,
                 )
-                time.sleep(wait)
+                time.sleep(retry_delay)
 
     raise last_exc
 
@@ -282,9 +283,6 @@ def main():
         "--limit", type=int, default=None, help="Only process the first N candidates (testing)"
     )
     parser.add_argument(
-        "--delay", type=float, default=5.0, help="Seconds to wait between resume downloads"
-    )
-    parser.add_argument(
         "--save-every",
         type=int,
         default=100,
@@ -303,10 +301,11 @@ def main():
         help="Number of attempts when fetching a resume before giving up",
     )
     parser.add_argument(
-        "--retry-backoff",
+        "--retry-delay",
         type=float,
-        default=2.0,
-        help="Base seconds to wait between resume fetch retries (doubles each attempt)",
+        default=5.0,
+        help="Seconds to wait before retrying after a failed resume fetch "
+        "(no delay is applied between successful fetches)",
     )
     args = parser.parse_args()
 
@@ -370,7 +369,7 @@ def main():
                 session,
                 cache,
                 retries=args.retries,
-                backoff=args.retry_backoff,
+                retry_delay=args.retry_delay,
             )
         except requests.RequestException as exc:
             print(f"  !! failed to download resume after {args.retries} attempts: {exc}", file=sys.stderr)
@@ -385,8 +384,6 @@ def main():
         if processed % args.save_every == 0:
             n_chunks = split_ndjson_into_chunks(ndjson_path, args.output, args.chunk_size)
             print(f"  -- refreshed {n_chunks} chunk file(s) ({processed} records) --", file=sys.stderr)
-
-        time.sleep(args.delay)
 
     n_chunks = split_ndjson_into_chunks(ndjson_path, args.output, args.chunk_size)
 
