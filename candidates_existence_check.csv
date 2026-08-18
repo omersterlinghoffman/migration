@@ -56,9 +56,9 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 310765,Exist - No Resume,179306,a00N300001I5NETIA3,,N/A (candidate not in SF),
 315534,Created,179306,a00OL000002U1VqYAK,,Created,
 316266,Exist,182162,,,Unresolved: Job__c match count = 7 (expected 1),
-318129,Exist - No Resume,179303,a00N300001F2zjtIAB,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-318129,Exist - No Resume,182162,a00N300001F2zjtIAB,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-318129,Exist - No Resume,179306,a00N300001F2zjtIAB,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+318129,Created,179303,a00N300001F2zjtIAB,,Created,
+318129,Created,182162,a00N300001F2zjtIAB,,Created,
+318129,Created,179306,a00N300001F2zjtIAB,,Created,
 319209,Exist,179303,a00N300001Etz35IAB,a02N300000qJg7FIAS,Exist,
 321116,Exist,182162,,,Unresolved: Job__c match count = 7 (expected 1),
 321116,Exist,179303,a00N300001F2tzTIAR,a02N300000qJg7FIAS,Exist,
@@ -114,8 +114,8 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 491168,Exist,179306,a00N300001Eu3sJIAR,a02N300000qJPOAIA4,Exist,
 491198,Created,182162,a00N300001I5MuZIAV,,Created,
 491421,Created,179306,a00N300001I5MoSIAV,,Created,
-491438,Exist - No Resume,182162,a00OL000003HUIwYAO,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-491438,Exist - No Resume,179306,a00OL000003HUIwYAO,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+491438,Created,182162,a00OL000003HUIwYAO,,Created,
+491438,Created,179306,a00OL000003HUIwYAO,,Created,
 491457,Exist,179306,a00N300001F2xuhIAB,a02N300000qJPOAIA4,Exist,
 491488,Created,182162,a00N300001I5MJBIA3,,Created,
 491587,Exist,179303,a00N300001GNRCJIA5,a02N300000qJg7FIAS,Not Exist,
@@ -140,9 +140,9 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 494015,Created,179306,a00N300001I5MpsIAF,,Created,
 498002,Exist,179306,a00N300001F2y3YIAR,a02N300000qJPOAIA4,Not Exist,
 498002,Exist,182162,,,Unresolved: Job__c match count = 7 (expected 1),
-499969,Exist - No Resume,179306,a00OL000002UbC9YAK,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+499969,Created,179306,a00OL000002UbC9YAK,,Created,
 499977,Exist,179306,a00N300001Eu4BUIAZ,a02N300000qJPOAIA4,Not Exist,
-500014,Exist - No Resume,179306,a00OL000003MsneYAC,,N/A (candidate not in SF),
+500014,Created,179306,a00OL000003MsneYAC,,Created,
 500039,Created,182162,a00N300001EuqPBIAZ,,Created,
 500079,Exist,179306,a00N300001F2y5vIAB,a02N300000qJPOAIA4,Not Exist,
 500084,Exist - No Resume,182162,a00N300001Eu3niIAB,,N/A (candidate not in SF),
@@ -153,16 +153,16 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 500255,Exist,179306,a00N300001Eu4GZIAZ,a02N300000qJPOAIA4,Not Exist,
 500261,Created,182162,a00N300001F2y61IAB,,Created,
 500276,Exist,179306,a00N300001Eu4GcIAJ,a02N300000qJPOAIA4,Exist,
-500303,Exist - No Resume,179303,a00N300001F2tzTIAR,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-500303,Exist - No Resume,182162,a00N300001F2tzTIAR,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+500303,Created,179303,a00N300001F2tzTIAR,,Created,
+500303,Created,182162,a00N300001F2tzTIAR,,Created,
 500312,Exist,179303,a00N300001Eu4GkIAJ,a02N300000qJg7FIAS,Exist,
 500312,Exist,179306,a00N300001Eu4GkIAJ,a02N300000qJPOAIA4,Exist,
 500329,Exist,179306,a00N300001Eu4GmIAJ,a02N300000qJPOAIA4,Not Exist,
 505917,Created,179306,a00N300001I5MvWIAV,,Created,
 506044,Exist,179306,a00N300001Eu4SMIAZ,a02N300000qJPOAIA4,Exist,
-506049,Exist - No Resume,179306,a00N300001Eu3seIAB,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-506050,Exist - No Resume,179306,a00N300001I5MLeIAN,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-506052,Exist - No Resume,179306,a00N300001Eu4GcIAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+506049,Created,179306,a00N300001Eu3seIAB,,Created,
+506050,Created,179306,a00N300001I5MLeIAN,,Created,
+506052,Created,179306,a00N300001Eu4GcIAJ,,Created,
 506063,Exist - No Resume,179306,a00N300001I5NEsIAN,,N/A (candidate not in SF),
 506104,Exist,179306,a00N300001F2yMmIAJ,a02N300000qJPOAIA4,Exist,
 506126,Exist,182162,,,Unresolved: Job__c match count = 7 (expected 1),
@@ -212,8 +212,8 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 536279,Exist,179303,a00N300001F2ywDIAR,a02N300000qJg7FIAS,Exist,
 536308,Exist,182162,,,Unresolved: Job__c match count = 7 (expected 1),
 536352,Exist - No Resume,181706,a00N300001I5NClIAN,,N/A (candidate not in SF),
-536364,Exist - No Resume,179306,a00N300001I5MpsIAF,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-536364,Exist - No Resume,179303,a00N300001I5MpsIAF,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+536364,Created,179306,a00N300001I5MpsIAF,,Created,
+536364,Created,179303,a00N300001I5MpsIAF,,Created,
 536471,Exist,179306,a00N300001GNRCLIA5,a02N300000qJPOAIA4,Not Exist,
 536471,Exist,182162,,,Unresolved: Job__c match count = 7 (expected 1),
 536518,Exist,179303,a00N300001F2ywPIAR,a02N300000qJg7FIAS,Exist,
@@ -245,9 +245,9 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 539831,Created,179306,a00N300001I5MpUIAV,,Created,
 539834,Exist,182162,,,Unresolved: Job__c match count = 7 (expected 1),
 539834,Exist,179306,a00N300001GNRCMIA5,a02N300000qJPOAIA4,Not Exist,
-539838,Exist - No Resume,179306,a00OL000001TppEYAS,,N/A (candidate not in SF),
+539838,Created,179306,a00OL000001TppEYAS,,Created,
 539851,Created,179306,a00OL000002U2X3YAK,,Created,
-539867,Exist - No Resume,179306,a00N300001F2z2HIAR,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+539867,Created,179306,a00N300001F2z2HIAR,,Created,
 539873,Created,179306,a00N300001I5MuEIAV,,Created,
 539873,Created,182162,a00N300001I5MuEIAV,,Created,
 539904,Created,179306,a00OL000002V66LYAS,,Created,
@@ -259,8 +259,8 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 539980,Exist,182162,,,Unresolved: Job__c match count = 7 (expected 1),
 539980,Exist,179306,a00N300001F2z2LIAR,a02N300000qJPOAIA4,Not Exist,
 539992,Exist,182162,,,Unresolved: Job__c match count = 7 (expected 1),
-540000,Exist - No Resume,182162,a00OL000002U16JYAS,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-540000,Exist - No Resume,179306,a00OL000002U16JYAS,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+540000,Created,182162,a00OL000002U16JYAS,,Created,
+540000,Created,179306,a00OL000002U16JYAS,,Created,
 540007,Created,182162,a00N300001I5MpaIAF,,Created,
 540025,Created,179306,a00N300001I5MCxIAN,,Created,
 540134,Exist - No Resume,179306,a00N300001I5NFIIA3,,N/A (candidate not in SF),
@@ -309,7 +309,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 544490,Created,179306,a00N300001I5MqrIAF,,Created,
 544510,Exist,179306,a00N300001GNRCNIA5,a02N300000qJPOAIA4,Not Exist,
 544510,Exist,182162,,,Unresolved: Job__c match count = 7 (expected 1),
-544511,Exist - No Resume,179306,a00N300001F2zF3IAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+544511,Created,179306,a00N300001F2zF3IAJ,,Created,
 544512,Exist - No Resume,182162,a00N300001I5NEGIA3,,N/A (candidate not in SF),
 544657,Created,179306,a00N300001I5NKVIA3,,Created,
 544659,Exist,179306,a00N300001Eu4x1IAB,a02N300000qJPOAIA4,Exist,
@@ -417,8 +417,8 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 559980,Exist - No Resume,179306,a00N300001I5NDfIAN,,N/A (candidate not in SF),
 560004,Created,179306,a00N300001Et0b9IAB,,Created,
 560008,Created,179306,a00N300001I5MJIIA3,,Created,
-560032,Exist - No Resume,179306,a00N300001F2z1PIAR,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-560032,Exist - No Resume,182162,a00N300001F2z1PIAR,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+560032,Created,179306,a00N300001F2z1PIAR,,Created,
+560032,Created,182162,a00N300001F2z1PIAR,,Created,
 560037,Exist,179306,a00OL000002VvoZYAS,a02N300000qJPOAIA4,Not Exist,
 560041,Exist,179306,a00N300001Eu5MWIAZ,a02N300000qJPOAIA4,Not Exist,
 560043,Exist - No Resume,182162,a00OL000003HkCAYA0,,N/A (candidate not in SF),
@@ -938,7 +938,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 2794177,Exist,179306,a00N300001F454VIAR,a02N300000qJPOAIA4,Exist,
 2794194,Exist,179306,a00N300001EuxOfIAJ,a02N300000qJPOAIA4,Exist,
 2794194,Exist,179303,a00N300001EuxOfIAJ,a02N300000qJg7FIAS,Exist,
-2794198,Exist - No Resume,179306,a00N300001EuxOgIAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+2794198,Created,179306,a00N300001EuxOgIAJ,,Created,
 2794201,Exist,179306,a00N300001EuxOjIAJ,a02N300000qJPOAIA4,Not Exist,
 2794206,Exist,179306,a00N300001F454XIAR,a02N300000qJPOAIA4,Not Exist,
 2794214,Created,179306,a00N300001EfTEEIA3,,Created,
@@ -973,9 +973,9 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 3017267,Created,182162,a00N300001I5MIwIAN,,Created,
 3017269,Exist,179306,a00N300001Ev43cIAB,a02N300000qJPOAIA4,Exist,
 3019168,Created,179306,a00N300001I5MuIIAV,,Created,
-3025768,Exist - No Resume,182162,a00N300001Di6ElIAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+3025768,Created,182162,a00N300001Di6ElIAJ,,Created,
 3028568,Exist - No Resume,179306,a00N300001I5NEZIA3,,N/A (candidate not in SF),
-3029376,Exist - No Resume,179306,a00N300001I5aOXIAZ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+3029376,Created,179306,a00N300001I5aOXIAZ,,Created,
 3042270,Exist,179306,a00N300001F4FrvIAF,a02N300000qJPOAIA4,Exist,
 3042270,Exist,182162,,,Unresolved: Job__c match count = 7 (expected 1),
 3042270,Exist,179303,a00N300001F4FrvIAF,a02N300000qJg7FIAS,Exist,
@@ -1563,7 +1563,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 6381289,Created,181707,a00N300001Ci87OIAR,,Created,
 6381837,Exist,179306,a00N300001F5a3xIAB,a02N300000qJPOAIA4,Not Exist,
 6382624,Created,182162,a00N300001I5MuFIAV,,Created,
-6382625,Exist - No Resume,182162,a00N300001I5MuFIAV,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+6382625,Created,182162,a00N300001I5MuFIAV,,Created,
 6387101,Exist,182162,,,Unresolved: Job__c match count = 7 (expected 1),
 6393262,Created,179306,a00N300001AlqzUIAR,,Created,
 6393758,Exist,179306,a00N300001F6bjUIAR,a02N300000qJPOAIA4,Not Exist,
@@ -1629,10 +1629,10 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 6800908,Created,179306,a00N300001I5MsOIAV,,Created,
 6805477,Exist,179306,a00N300001F6uKLIAZ,a02N300000qJPOAIA4,Exist,
 6807089,Exist,179306,a00N300001F6uQMIAZ,a02N300000qJPOAIA4,Not Exist,
-6808160,Exist - No Resume,179303,a00N3000017KBfvIAG,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-6808160,Exist - No Resume,179306,a00N3000017KBfvIAG,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-6808160,Exist - No Resume,182162,a00N3000017KBfvIAG,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-6808160,Exist - No Resume,181706,a00N3000017KBfvIAG,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+6808160,Created,179303,a00N3000017KBfvIAG,,Created,
+6808160,Created,179306,a00N3000017KBfvIAG,,Created,
+6808160,Created,182162,a00N3000017KBfvIAG,,Created,
+6808160,Created,181706,a00N3000017KBfvIAG,,Created,
 6814170,Created,179306,a00N300001C5FMiIAN,,Created,
 6814392,Exist,179306,a00N300001EtP8WIAV,a02N300000qJPOAIA4,Not Exist,
 6820536,Exist - No Resume,179306,a00N300001I5HweIAF,,N/A (candidate not in SF),
@@ -1777,7 +1777,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 7641689,Exist,182162,,,Unresolved: Job__c match count = 7 (expected 1),
 7647575,Created,179306,a00N300001I5MpyIAF,,Created,
 7647576,Not Exist,179306,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-7647578,Exist - No Resume,179306,a00N300001I5MpyIAF,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+7647578,Created,179306,a00N300001I5MpyIAF,,Created,
 7647630,Exist,179306,a00N300001Etmm6IAB,a02N300000qJPOAIA4,Exist,
 7652670,Exist,182162,,,Unresolved: Job__c match count = 7 (expected 1),
 7652670,Exist,179306,a00N300001EtmqSIAR,a02N300000qJPOAIA4,Not Exist,
@@ -1855,7 +1855,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 8029688,Exist,179306,a00N300001F83bIIAR,a02N300000qJPOAIA4,Exist,
 8039135,Created,179306,a00N300001F848pIAB,,Created,
 8041671,Created,179306,a00N300001I5MvmIAF,,Created,
-8059163,Exist - No Resume,179306,a00N300001E6Z9DIAV,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+8059163,Created,179306,a00N300001E6Z9DIAV,,Created,
 8071752,Created,179306,a00N300001I5MLjIAN,,Created,
 8074578,Exist,179306,a00N300001F877UIAR,a02N300000qJPOAIA4,Exist,
 8077813,Created,179306,a00N300001I5MoOIAV,,Created,
@@ -2150,9 +2150,9 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 8995280,Exist,179303,a00N300001GBI9ZIAX,a02N300000qJg7FIAS,Not Exist,
 8995281,Exist,179303,a00N300001GBI9aIAH,a02N300000qJg7FIAS,Not Exist,
 8995282,Exist,179303,a00N300001GBI9bIAH,a02N300000qJg7FIAS,Not Exist,
-8995284,Exist - No Resume,179303,a00N300001GBI9cIAH,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-8995284,Exist - No Resume,179306,a00N300001GBI9cIAH,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-8995284,Exist - No Resume,182162,a00N300001GBI9cIAH,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+8995284,Created,179303,a00N300001GBI9cIAH,,Created,
+8995284,Created,179306,a00N300001GBI9cIAH,,Created,
+8995284,Created,182162,a00N300001GBI9cIAH,,Created,
 8995286,Exist,182162,,,Unresolved: Job__c match count = 7 (expected 1),
 8995286,Exist,179303,a00N300001GBI9dIAH,a02N300000qJg7FIAS,Not Exist,
 8995287,Exist,179303,a00N300001GBI9eIAH,a02N300000qJg7FIAS,Not Exist,
@@ -2174,7 +2174,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 8995305,Exist,179306,a00N300001GBI9pIAH,a02N300000qJPOAIA4,Not Exist,
 8995306,Exist,179303,a00N300001GBI9qIAH,a02N300000qJg7FIAS,Not Exist,
 8995307,Exist,179303,a00N300001GBI9rIAH,a02N300000qJg7FIAS,Not Exist,
-8995312,Exist - No Resume,179303,a00N3000019PIiVIAW,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+8995312,Created,179303,a00N3000019PIiVIAW,,Created,
 8995323,Exist,179303,a00N3000016tj72IAA,a02N300000qJg7FIAS,Exist,
 8995323,Exist,181707,a00N3000016tj72IAA,a02N300000qLSrPIAW,Not Exist,
 8995323,Exist,181706,a00N3000016tj72IAA,a02N300000qLa2XIAS,Not Exist,
@@ -2329,8 +2329,8 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 8996812,Exist,179306,a00N3000017EotMIAS,a02N300000qJPOAIA4,Exist,
 8996812,Exist,179303,a00N3000017EotMIAS,a02N300000qJg7FIAS,Exist,
 8996831,Exist,179303,a00N300001GBIaJIAX,a02N300000qJg7FIAS,Exist,
-8996832,Exist - No Resume,179306,a00N3000017cr0XIAQ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-8996832,Exist - No Resume,182162,a00N3000017cr0XIAQ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+8996832,Created,179306,a00N3000017cr0XIAQ,,Created,
+8996832,Created,182162,a00N3000017cr0XIAQ,,Created,
 8996837,Exist,179303,a00N3000017Gr3qIAC,a02N300000qJg7FIAS,Exist,
 8996838,Created,179306,a00N3000018GcluIAC,,Created,
 8996839,Exist,179303,a00N3000017GxlxIAC,a02N300000qJg7FIAS,Exist,
@@ -2406,14 +2406,14 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 8997384,Created,179303,a00N300001BZUHLIA5,,Created,
 8997396,Exist,179306,a00N3000017QkcGIAS,a02N300000qJPOAIA4,Exist,
 8997479,Exist,179303,a00N3000017SB13IAG,a02N300000qJg7FIAS,Exist,
-8997480,Exist - No Resume,179303,a00N3000017SB17IAG,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+8997480,Created,179303,a00N3000017SB17IAG,,Created,
 8997483,Created,181707,a00N3000017SHHfIAO,,Created,
 8997483,Created,179306,a00N3000017SHHfIAO,,Created,
 8997483,Created,179303,a00N3000017SHHfIAO,,Created,
 8997484,Exist,179303,a00N300001GBIhkIAH,a02N300000qJg7FIAS,Exist,
 8997486,Exist,179303,a00N3000017Sdt8IAC,a02N300000qJg7FIAS,Exist,
-8997597,Exist - No Resume,179303,a00N3000017VNvBIAW,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-8997597,Exist - No Resume,179306,a00N3000017VNvBIAW,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+8997597,Created,179303,a00N3000017VNvBIAW,,Created,
+8997597,Created,179306,a00N3000017VNvBIAW,,Created,
 8997615,Exist,179306,a00N3000017VtILIA0,a02N300000qJPOAIA4,Exist,
 8997623,Exist,179306,a00N300001AJJf1IAH,a02N300000qJPOAIA4,Exist,
 8997623,Exist,179303,a00N300001AJJf1IAH,a02N300000qJg7FIAS,Exist,
@@ -2460,15 +2460,15 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 8998342,Exist,179306,a00N3000017jtbiIAA,a02N300000qJPOAIA4,Exist,
 8998346,Exist,179306,a00N300001GBIS3IAP,a02N300000qJPOAIA4,Exist,
 8998363,Exist,179306,a00N3000017kTiQIAU,a02N300000qJPOAIA4,Exist,
-8998366,Exist - No Resume,179306,a00N300001B4irjIAB,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+8998366,Created,179306,a00N300001B4irjIAB,,Created,
 8998373,Exist,179303,a00N3000017kRLkIAM,a02N300000qJg7FIAS,Exist,
 8998401,Exist,179303,a00N3000017l8DpIAI,a02N300000qJg7FIAS,Exist,
 8998404,Created,179303,a00N300001I5MqJIAV,,Created,
 8998414,Exist - No Resume,179303,a00N300001BeGQfIAN,,N/A (candidate not in SF),
 8998415,Exist,179306,a00N3000017lPzPIAU,a02N300000qJPOAIA4,Exist,
-8998416,Exist - No Resume,182162,a00N3000017lPzOIAU,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-8998416,Exist - No Resume,179303,a00N3000017lPzOIAU,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-8998416,Exist - No Resume,179306,a00N3000017lPzOIAU,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+8998416,Created,182162,a00N3000017lPzOIAU,,Created,
+8998416,Created,179303,a00N3000017lPzOIAU,,Created,
+8998416,Created,179306,a00N3000017lPzOIAU,,Created,
 8998418,Exist,179303,a00N300001GBISKIA5,a02N300000qJg7FIAS,Exist,
 8998420,Exist,179303,a00N3000017ldvpIAA,a02N300000qJg7FIAS,Not Exist,
 8998424,Exist,182162,,,Unresolved: Job__c match count = 7 (expected 1),
@@ -2506,7 +2506,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 8998777,Exist,179306,a00N3000017sAApIAM,a02N300000qJPOAIA4,Exist,
 8998784,Exist,179306,a00N3000017sBzmIAE,a02N300000qJPOAIA4,Exist,
 8998784,Exist,179303,a00N3000017sBzmIAE,a02N300000qJg7FIAS,Not Exist,
-8998825,Exist - No Resume,179303,a00N300001AdaTeIAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+8998825,Created,179303,a00N300001AdaTeIAJ,,Created,
 8998851,Exist,179303,a00N3000017sdPiIAI,a02N300000qJg7FIAS,Exist,
 8998851,Exist,179306,a00N3000017sdPiIAI,a02N300000qJPOAIA4,Not Exist,
 8998868,Exist,179303,a00N300001D6y7yIAB,a02N300000qJg7FIAS,Exist,
@@ -2529,7 +2529,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 8999151,Not Exist,179303,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 8999172,Exist,179306,a00N300001Civ1oIAB,a02N300000qJPOAIA4,Not Exist,
 8999172,Exist,179303,a00N300001Civ1oIAB,a02N300000qJg7FIAS,Exist,
-8999175,Exist - No Resume,179303,a00N300001AI1J0IAL,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+8999175,Created,179303,a00N300001AI1J0IAL,,Created,
 8999218,Exist,179303,a00N3000019PUK0IAO,a02N300000qJg7FIAS,Exist,
 8999232,Exist,179303,,,Unresolved: Candidate__c match count = 2 (expected 1),
 8999233,Exist,179306,a00N3000017y53bIAA,a02N300000qJPOAIA4,Exist,
@@ -2588,14 +2588,14 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 8999960,Exist,179303,a00N3000018GcluIAC,a02N300000qJg7FIAS,Exist,
 8999964,Created,179306,a00N3000019iyPdIAI,,Created,
 8999964,Created,179303,a00N3000019iyPdIAI,,Created,
-8999972,Exist - No Resume,179303,a00N3000018Gv5LIAS,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+8999972,Created,179303,a00N3000018Gv5LIAS,,Created,
 8999979,Exist,179303,a00N3000018HLsZIAW,a02N300000qJg7FIAS,Exist,
 8999980,Exist,179303,a00N3000018HG07IAG,a02N300000qJg7FIAS,Exist,
 8999991,Exist,179306,a00N3000018IrSCIA0,a02N300000qJPOAIA4,Exist,
 8999991,Exist,179303,a00N3000018IrSCIA0,a02N300000qJg7FIAS,Exist,
 8999993,Exist,179303,,,Unresolved: Candidate__c match count = 2 (expected 1),
 8999993,Exist,179306,,,Unresolved: Candidate__c match count = 2 (expected 1),
-9000003,Exist - No Resume,179303,a00N300001DiOZmIAN,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9000003,Created,179303,a00N300001DiOZmIAN,,Created,
 9000004,Exist,179303,a00N3000018JlazIAC,a02N300000qJg7FIAS,Exist,
 9000014,Exist,179303,a00N3000018K3foIAC,a02N300000qJg7FIAS,Exist,
 9000058,Created,179303,a00N3000019NM0eIAG,,Created,
@@ -2603,14 +2603,14 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9000088,Exist,179303,a00N3000018L5cNIAS,a02N300000qJg7FIAS,Exist,
 9000089,Exist,179303,a00N3000018L5cOIAS,a02N300000qJg7FIAS,Exist,
 9000092,Exist,179303,a00N300001GBJ0WIAX,a02N300000qJg7FIAS,Exist,
-9000093,Exist - No Resume,179306,a00N3000018LHLsIAO,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9000093,Exist - No Resume,179303,a00N3000018LHLsIAO,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9000161,Exist - No Resume,179303,a00N3000018MtK7IAK,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9000093,Created,179306,a00N3000018LHLsIAO,,Created,
+9000093,Created,179303,a00N3000018LHLsIAO,,Created,
+9000161,Created,179303,a00N3000018MtK7IAK,,Created,
 9000184,Created,179303,a00N300001AKiYAIA1,,Created,
 9000185,Exist,179306,a00N3000018MydLIAS,a02N300000qJPOAIA4,Exist,
 9000192,Not Exist,179306,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9000207,Created,179303,a00N3000018NvYQIA0,,Created,
-9000236,Exist - No Resume,179306,a00N3000019Zj6QIAS,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9000236,Created,179306,a00N3000019Zj6QIAS,,Created,
 9000237,Exist,179303,a00N3000018OJVqIAO,a02N300000qJg7FIAS,Exist,
 9000237,Exist,179306,a00N3000018OJVqIAO,a02N300000qJPOAIA4,Not Exist,
 9000256,Exist,179306,a00N3000018ORYKIA4,a02N300000qJPOAIA4,Exist,
@@ -2649,9 +2649,9 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9000881,Created,182162,a00N3000018WKumIAG,,Created,
 9000881,Created,179303,a00N3000018WKumIAG,,Created,
 9000881,Created,179306,a00N3000018WKumIAG,,Created,
-9000884,Exist - No Resume,179306,a00N3000018WKumIAG,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9000884,Exist - No Resume,182162,a00N3000018WKumIAG,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9000884,Exist - No Resume,179303,a00N3000018WKumIAG,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9000884,Created,179306,a00N3000018WKumIAG,,Created,
+9000884,Created,182162,a00N3000018WKumIAG,,Created,
+9000884,Created,179303,a00N3000018WKumIAG,,Created,
 9000906,Exist - No Resume,179303,a00N300001Ev8U4IAJ,,N/A (candidate not in SF),
 9000909,Created,179306,a00N3000018Wk5yIAC,,Created,
 9000909,Created,179303,a00N3000018Wk5yIAC,,Created,
@@ -2668,8 +2668,8 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9001064,Exist,179303,a00N3000018NG7QIAW,a02N300000qJg7FIAS,Exist,
 9001088,Exist,179303,a00N3000018aaMZIAY,a02N300000qJg7FIAS,Exist,
 9001088,Exist,179306,a00N3000018aaMZIAY,a02N300000qJPOAIA4,Not Exist,
-9001136,Exist - No Resume,182162,a00N3000018cHAtIAM,,N/A (candidate not in SF),"[{""statusCode"": ""REQUIRED_FIELD_MISSING"", ""message"": ""Required fields are missing: [Title]"", ""fields"": [""Title""]}, {""statusCode"": ""INVALID_ARGUMENT_TYPE"", ""message"": ""The argument is null or invalid."", ""fields"": []}]"
-9001136,Exist - No Resume,179303,a00N3000018cHAtIAM,,N/A (candidate not in SF),"[{""statusCode"": ""REQUIRED_FIELD_MISSING"", ""message"": ""Required fields are missing: [Title]"", ""fields"": [""Title""]}, {""statusCode"": ""INVALID_ARGUMENT_TYPE"", ""message"": ""The argument is null or invalid."", ""fields"": []}]"
+9001136,Error,182162,a00N3000018cHAtIAM,,N/A (candidate not in SF),"[{""statusCode"": ""REQUIRED_FIELD_MISSING"", ""message"": ""Required fields are missing: [Title]"", ""fields"": [""Title""]}, {""statusCode"": ""INVALID_ARGUMENT_TYPE"", ""message"": ""The argument is null or invalid."", ""fields"": []}]"
+9001136,Error,179303,a00N3000018cHAtIAM,,N/A (candidate not in SF),"[{""statusCode"": ""REQUIRED_FIELD_MISSING"", ""message"": ""Required fields are missing: [Title]"", ""fields"": [""Title""]}, {""statusCode"": ""INVALID_ARGUMENT_TYPE"", ""message"": ""The argument is null or invalid."", ""fields"": []}]"
 9001147,Exist,179303,a00N3000018chenIAA,a02N300000qJg7FIAS,Exist,
 9001158,Exist,179303,a00N3000018dZykIAE,a02N300000qJg7FIAS,Exist,
 9001164,Exist,179306,a00N3000018e4iwIAA,a02N300000qJPOAIA4,Exist,
@@ -2709,7 +2709,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9001589,Exist,179303,,,Unresolved: Candidate__c match count = 2 (expected 1),
 9001602,Exist,179303,a00N3000018rjZpIAI,a02N300000qJg7FIAS,Exist,
 9001655,Exist,179303,a00N300001AVtoMIAT,a02N300000qJg7FIAS,Exist,
-9001701,Exist - No Resume,179306,a00N300001A0Z1NIAV,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9001701,Created,179306,a00N300001A0Z1NIAV,,Created,
 9001710,Exist,179306,a00N3000018utXvIAI,a02N300000qJPOAIA4,Exist,
 9001713,Exist,179303,a00N300001GBIsmIAH,a02N300000qJg7FIAS,Exist,
 9001726,Exist,179303,a00N3000018vWZKIA2,a02N300000qJg7FIAS,Exist,
@@ -2745,9 +2745,9 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9002185,Exist,179306,a00N300001EG0OjIAL,a02N300000qJPOAIA4,Exist,
 9002194,Not Exist,182162,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9002194,Not Exist,179306,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9002195,Exist - No Resume,179306,a00N300001Bz3i5IAB,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9002195,Exist - No Resume,182162,a00N300001Bz3i5IAB,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9002195,Exist - No Resume,179303,a00N300001Bz3i5IAB,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9002195,Created,179306,a00N300001Bz3i5IAB,,Created,
+9002195,Created,182162,a00N300001Bz3i5IAB,,Created,
+9002195,Created,179303,a00N300001Bz3i5IAB,,Created,
 9002232,Exist,179303,a00N300001GBI52IAH,a02N300000qJg7FIAS,Exist,
 9002238,Exist,179306,a00N3000019AoijIAC,a02N300000qJPOAIA4,Exist,
 9002238,Exist,179303,a00N3000019AoijIAC,a02N300000qJg7FIAS,Exist,
@@ -2850,7 +2850,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9003275,Exist,181707,a00N300001GBACcIAP,a02N300000qLSrPIAW,Exist,
 9003678,Exist,179306,a00N3000019YkpGIAS,a02N300000qJPOAIA4,Exist,
 9003688,Exist,179303,a00N300001GBJ8uIAH,a02N300000qJg7FIAS,Exist,
-9003719,Exist - No Resume,179303,a00N3000019ZlgCIAS,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9003719,Created,179303,a00N3000019ZlgCIAS,,Created,
 9003724,Exist,179303,a00N3000019Zj6QIAS,a02N300000qJg7FIAS,Exist,
 9003725,Created,179306,a00N3000019Zj6QIAS,,Created,
 9003728,Exist,179303,a00N3000019aQTAIA2,a02N300000qJg7FIAS,Exist,
@@ -2891,8 +2891,8 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9004267,Exist,179306,a00N3000019iyPdIAI,a02N300000qJPOAIA4,Exist,
 9004287,Exist,179303,a00N300001BIar9IAD,a02N300000qJg7FIAS,Exist,
 9004287,Exist,179306,a00N300001BIar9IAD,a02N300000qJPOAIA4,Exist,
-9004295,Exist - No Resume,179303,a00N3000019k6fzIAA,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9004295,Exist - No Resume,179306,a00N3000019k6fzIAA,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9004295,Created,179303,a00N3000019k6fzIAA,,Created,
+9004295,Created,179306,a00N3000019k6fzIAA,,Created,
 9004296,Exist,179303,a00N3000019k3YMIAY,a02N300000qJg7FIAS,Exist,
 9004297,Exist,179306,a00N3000019k3YNIAY,a02N300000qJPOAIA4,Exist,
 9004300,Created,179306,a00N3000019khieIAA,,Created,
@@ -2900,7 +2900,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9004362,Exist,179306,a00N3000019mcDQIAY,a02N300000qJPOAIA4,Exist,
 9004366,Exist,179306,a00N3000019mdWEIAY,a02N300000qJPOAIA4,Exist,
 9004371,Created,179303,a00N3000019mqJiIAI,,Created,
-9004390,Exist - No Resume,179303,a00N300001Afy0OIAR,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9004390,Created,179303,a00N300001Afy0OIAR,,Created,
 9004409,Exist,179303,a00N300001GBIW6IAP,a02N300000qJg7FIAS,Exist,
 9004412,Exist,179303,a00N3000019oEf0IAE,a02N300000qJg7FIAS,Exist,
 9004412,Exist,179306,a00N3000019oEf0IAE,a02N300000qJPOAIA4,Exist,
@@ -2932,9 +2932,9 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9004579,Exist,179306,a00N3000019vEC2IAM,a02N300000qJPOAIA4,Exist,
 9004596,Exist,179303,a00N3000019vRYuIAM,a02N300000qJg7FIAS,Exist,
 9004598,Exist,179306,a00N3000019vA3SIAU,a02N300000qJPOAIA4,Exist,
-9004599,Exist - No Resume,179303,a00N300001CkxFTIAZ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9004612,Exist - No Resume,182162,a00N300001ATOn6IAH,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9004612,Exist - No Resume,179303,a00N300001ATOn6IAH,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9004599,Created,179303,a00N300001CkxFTIAZ,,Created,
+9004612,Created,182162,a00N300001ATOn6IAH,,Created,
+9004612,Created,179303,a00N300001ATOn6IAH,,Created,
 9004613,Created,179303,a00N300001ATOn6IAH,,Created,
 9004613,Created,179306,a00N300001ATOn6IAH,,Created,
 9004613,Created,182162,a00N300001ATOn6IAH,,Created,
@@ -2944,7 +2944,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9004619,Exist,181707,a00N300001ArsC7IAJ,a02N300000qLSrPIAW,Not Exist,
 9004619,Exist,181706,a00N300001ArsC7IAJ,a02N300000qLa2XIAS,Exist,
 9004619,Exist,179306,a00N300001ArsC7IAJ,a02N300000qJPOAIA4,Not Exist,
-9004620,Exist - No Resume,179306,a00N3000017ldvpIAA,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9004620,Created,179306,a00N3000017ldvpIAA,,Created,
 9004621,Exist,181707,a00N300001ArqexIAB,a02N300000qLSrPIAW,Not Exist,
 9004621,Exist,181706,a00N300001ArqexIAB,a02N300000qLa2XIAS,Exist,
 9004621,Exist,179306,a00N300001ArqexIAB,a02N300000qJPOAIA4,Not Exist,
@@ -3007,7 +3007,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9005544,Exist,179303,a00N300001ATOn6IAH,a02N300000qJg7FIAS,Exist,
 9005548,Created,179303,a00N300001AI1J0IAL,,Created,
 9005549,Exist,179303,a00N300001AIA63IAH,a02N300000qJg7FIAS,Exist,
-9005550,Exist - No Resume,179303,a00N300001ByGCmIAN,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9005550,Created,179303,a00N300001ByGCmIAN,,Created,
 9005553,Created,179303,a00N3000019glMbIAI,,Created,
 9005553,Created,179306,a00N3000019glMbIAI,,Created,
 9005554,Created,179303,a00N300001AIQnPIAX,,Created,
@@ -3027,7 +3027,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9005683,Exist,179303,a00N300001AMrCJIA1,a02N300000qJg7FIAS,Exist,
 9005685,Exist,179303,a00N300001ANHwZIAX,a02N300000qJg7FIAS,Exist,
 9005687,Exist,179306,a00N300001ANdYkIAL,a02N300000qJPOAIA4,Exist,
-9005688,Exist - No Resume,179303,a00N3000016tjQWIAY,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9005688,Created,179303,a00N3000016tjQWIAY,,Created,
 9005696,Exist,179303,a00N300001AO6yzIAD,a02N300000qJg7FIAS,Exist,
 9005696,Exist,179306,a00N300001AO6yzIAD,a02N300000qJPOAIA4,Not Exist,
 9005769,Exist,179303,a00N300001GBKDAIA5,a02N300000qJg7FIAS,Exist,
@@ -3049,7 +3049,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9005809,Created,179303,a00N300001ARAmfIAH,,Created,
 9005820,Exist,179306,a00N300001ARFknIAH,a02N300000qJPOAIA4,Exist,
 9005820,Exist,179303,a00N300001ARFknIAH,a02N300000qJg7FIAS,Exist,
-9005827,Exist - No Resume,179303,a00N300001BhEnFIAV,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9005827,Created,179303,a00N300001BhEnFIAV,,Created,
 9005828,Exist,179303,a00N300001ARbi9IAD,a02N300000qJg7FIAS,Exist,
 9005835,Exist,179303,a00N300001ARXUwIAP,a02N300000qJg7FIAS,Exist,
 9005835,Exist,179306,a00N300001ARXUwIAP,a02N300000qJPOAIA4,Exist,
@@ -3071,16 +3071,16 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9005945,Exist,182162,,,Unresolved: Job__c match count = 7 (expected 1),
 9005945,Exist,179306,a00N300001AUKKrIAP,a02N300000qJPOAIA4,Not Exist,
 9005945,Exist,179303,a00N300001AUKKrIAP,a02N300000qJg7FIAS,Exist,
-9005974,Exist - No Resume,179303,a00N300001AULC4IAP,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9005974,Created,179303,a00N300001AULC4IAP,,Created,
 9005979,Created,179303,a00N300001AU32FIAT,,Created,
 9005989,Exist,181707,a00N300001AP8owIAD,a02N300000qLSrPIAW,Exist,
 9005989,Exist,179306,a00N300001AP8owIAD,a02N300000qJPOAIA4,Exist,
 9005991,Created,179303,a00N300001ATydiIAD,,Created,
-9005998,Exist - No Resume,179303,a00N300001AUDUmIAP,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9006002,Exist - No Resume,179303,a00N300001AZ0AEIA1,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9005998,Created,179303,a00N300001AUDUmIAP,,Created,
+9006002,Created,179303,a00N300001AZ0AEIA1,,Created,
 9006003,Exist,179303,a00N300001AUUbzIAH,a02N300000qJg7FIAS,Exist,
 9006004,Exist,179303,a00N300001ATw2QIAT,a02N300000qJg7FIAS,Exist,
-9006005,Exist - No Resume,179306,a00N300001AUUbzIAH,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9006005,Created,179306,a00N300001AUUbzIAH,,Created,
 9006022,Exist,179303,a00N300001AV0lXIAT,a02N300000qJg7FIAS,Exist,
 9006025,Exist,179306,a00N300001DiWLxIAN,a02N300000qJPOAIA4,Exist,
 9006026,Exist,179303,a00N300001CrSDMIA3,a02N300000qJg7FIAS,Exist,
@@ -3092,7 +3092,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9006062,Exist,179306,a00N300001GBIyQIAX,a02N300000qJPOAIA4,Not Exist,
 9006067,Exist,179306,a00N300001AXob2IAD,a02N300000qJPOAIA4,Exist,
 9006067,Exist,179303,a00N300001AXob2IAD,a02N300000qJg7FIAS,Exist,
-9006068,Exist - No Resume,179303,a00N300001AWQZCIA5,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9006068,Created,179303,a00N300001AWQZCIA5,,Created,
 9006069,Exist,179303,a00N300001AWQZCIA5,a02N300000qJg7FIAS,Exist,
 9006069,Exist,179306,a00N300001AWQZCIA5,a02N300000qJPOAIA4,Exist,
 9006070,Exist,179303,a00N300001DbtlVIAR,a02N300000qJg7FIAS,Exist,
@@ -3132,7 +3132,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9006213,Exist,179303,a00N300001CxIo3IAF,a02N300000qJg7FIAS,Exist,
 9006214,Exist,179303,a00N300001GBK7RIAX,a02N300000qJg7FIAS,Exist,
 9006224,Exist,179303,a00N300001AJZofIAH,a02N300000qJg7FIAS,Exist,
-9006259,Exist - No Resume,179303,a00N300001AdlliIAB,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9006259,Created,179303,a00N300001AdlliIAB,,Created,
 9006265,Exist,181706,a00N300001GBK7cIAH,a02N300000qLa2XIAS,Not Exist,
 9006366,Exist,179303,a00N300001Afy0OIAR,a02N300000qJg7FIAS,Exist,
 9006367,Exist,179303,a00N300001AULC4IAP,a02N300000qJg7FIAS,Exist,
@@ -3269,7 +3269,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9007377,Exist,181706,a00N300001BKyqsIAD,a02N300000qLa2XIAS,Exist,
 9007379,Exist,179306,a00N300001BL0WCIA1,a02N300000qJPOAIA4,Exist,
 9007380,Exist,181706,a00N300001BL0WDIA1,a02N300000qLa2XIAS,Exist,
-9007381,Exist - No Resume,181706,a00N300001BLEiiIAH,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9007381,Created,181706,a00N300001BLEiiIAH,,Created,
 9007385,Exist,181706,a00N300001BLP9VIAX,a02N300000qLa2XIAS,Exist,
 9007390,Exist,179303,a00N300001BMYM1IAP,a02N300000qJg7FIAS,Exist,
 9007390,Exist,181707,a00N300001BMYM1IAP,a02N300000qLSrPIAW,Exist,
@@ -3316,13 +3316,13 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9007541,Not Exist,181706,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9007543,Created,181707,a00N300001BZNcVIAX,,Created,
 9007544,Exist,179303,a00N300001BZNcWIAX,a02N300000qJg7FIAS,Exist,
-9007545,Exist - No Resume,181708,a00N300001BZNcXIAX,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9007545,Created,181708,a00N300001BZNcXIAX,,Created,
 9007546,Exist,181706,a00N300001BZUHLIA5,a02N300000qLa2XIAS,Exist,
 9007547,Exist,181706,a00N300001BYldrIAD,a02N300000qLa2XIAS,Exist,
 9007547,Exist,181707,a00N300001BYldrIAD,a02N300000qLSrPIAW,Exist,
 9007548,Exist,181707,a00N300001BYldsIAD,a02N300000qLSrPIAW,Exist,
 9007549,Exist,181708,a00N300001D79BbIAJ,a02N300000qLZT3IAO,Exist,
-9007550,Exist - No Resume,179303,a00N300001BZSXKIA5,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9007550,Created,179303,a00N300001BZSXKIA5,,Created,
 9007551,Exist,179303,a00N300001BZSXKIA5,a02N300000qJg7FIAS,Exist,
 9007552,Exist,181706,a00N300001BZSXLIA5,a02N300000qLa2XIAS,Exist,
 9007553,Exist,181706,a00N300001BYzQgIAL,a02N300000qLa2XIAS,Exist,
@@ -3336,7 +3336,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9007560,Exist - No Resume,181706,a00N300001BZZP5IAP,,N/A (candidate not in SF),
 9007560,Exist - No Resume,181707,a00N300001BZZP5IAP,,N/A (candidate not in SF),
 9007560,Exist - No Resume,181708,a00N300001BZZP5IAP,,N/A (candidate not in SF),
-9007561,Exist - No Resume,181706,a00N300001BZZP7IAP,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9007561,Created,181706,a00N300001BZZP7IAP,,Created,
 9007562,Exist,181707,a00N300001BZZP7IAP,a02N300000qLSrPIAW,Exist,
 9007563,Exist,181706,a00N300001BZ40TIAT,a02N300000qLa2XIAS,Exist,
 9007564,Exist,179303,a00N300001BYyj9IAD,a02N300000qJg7FIAS,Not Exist,
@@ -3577,7 +3577,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9009998,Exist,179306,a00N300001CQmkjIAD,a02N300000qJPOAIA4,Exist,
 9010032,Exist,181706,a00N300001CPl1EIAT,a02N300000qLa2XIAS,Exist,
 9010033,Exist,179303,a00N300001CPl1GIAT,a02N300000qJg7FIAS,Exist,
-9010036,Exist - No Resume,179306,a00N300001CPAJQIA5,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9010036,Created,179306,a00N300001CPAJQIA5,,Created,
 9010044,Exist - No Resume,179306,a00N300001CPoVLIA1,,N/A (candidate not in SF),
 9010080,Exist - No Resume,179306,a00N300001CQEspIAH,,N/A (candidate not in SF),
 9010094,Exist,179306,a00N300001CQEspIAH,a02N300000qJPOAIA4,Exist,
@@ -3639,7 +3639,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9010505,Exist,181872,a00N300001CZtyHIAT,a02N300000tR2VkIAK,Not Exist,
 9010505,Exist,181874,a00N300001CZtyHIAT,a02N300000tR2VlIAK,Not Exist,
 9010507,Exist,181874,a00N300001CZgg9IAD,a02N300000tR2VlIAK,Not Exist,
-9010509,Exist - No Resume,181874,a00N300001Cgl1dIAB,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9010509,Created,181874,a00N300001Cgl1dIAB,,Created,
 9010510,Exist,181872,a00N300001Ca8ngIAB,a02N300000tR2VkIAK,Not Exist,
 9010510,Exist,181874,a00N300001Ca8ngIAB,a02N300000tR2VlIAK,Not Exist,
 9010513,Exist,181874,a00N300001Ca7q5IAB,a02N300000tR2VlIAK,Not Exist,
@@ -3665,14 +3665,14 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9010572,Exist,181872,a00N300001Cako6IAB,a02N300000tR2VkIAK,Not Exist,
 9010574,Not Exist,181872,,,N/A (candidate not in SF),
 9010575,Created,179306,a00N300001CabWNIAZ,,Created,
-9010576,Exist - No Resume,181707,a00N300001CabWPIAZ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9010576,Created,181707,a00N300001CabWPIAZ,,Created,
 9010577,Exist,181706,a00N300001CaNBkIAN,a02N300000qLa2XIAS,Exist,
 9010578,Exist,181874,a00N300001GBKA4IAP,a02N300000tR2VlIAK,Not Exist,
 9010579,Exist,181872,a00N300001Caz2PIAR,a02N300000tR2VkIAK,Not Exist,
 9010585,Exist,181874,a00N300001CbE6FIAV,a02N300000tR2VlIAK,Not Exist,
-9010587,Exist - No Resume,181706,a00N300001CbFgfIAF,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9010587,Exist - No Resume,181707,a00N300001CbFgfIAF,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9010587,Exist - No Resume,181708,a00N300001CbFgfIAF,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9010587,Created,181706,a00N300001CbFgfIAF,,Created,
+9010587,Created,181707,a00N300001CbFgfIAF,,Created,
+9010587,Created,181708,a00N300001CbFgfIAF,,Created,
 9010588,Created,181872,a00N300001I5Mp3IAF,,Created,
 9010588,Created,181874,a00N300001I5Mp3IAF,,Created,
 9010589,Exist - No Resume,181872,a00N300001CbZYtIAN,,N/A (candidate not in SF),
@@ -3693,19 +3693,19 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9010642,Created,181706,a00N300001CcC5dIAF,,Created,
 9010644,Exist,181874,a00N300001CcEyeIAF,a02N300000tR2VlIAK,Not Exist,
 9010646,Exist,181707,a00N300001DAQHWIA5,a02N300000qLSrPIAW,Exist,
-9010647,Exist - No Resume,179303,a00N300001CbuiEIAR,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9010647,Exist - No Resume,181707,a00N300001CbuiEIAR,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9010647,Created,179303,a00N300001CbuiEIAR,,Created,
+9010647,Created,181707,a00N300001CbuiEIAR,,Created,
 9010648,Exist,181706,a00N300001CbuiEIAR,a02N300000qLa2XIAS,Exist,
 9010654,Exist,179303,a00N300001Cc2O0IAJ,a02N300000qJg7FIAS,Not Exist,
 9010654,Exist,181706,a00N300001Cc2O0IAJ,a02N300000qLa2XIAS,Exist,
 9010655,Exist,181874,a00N300001Cc2O1IAJ,a02N300000tR2VlIAK,Not Exist,
 9010657,Not Exist,181872,,,N/A (candidate not in SF),
-9010664,Exist - No Resume,181708,a00N300001Cbh8PIAR,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9010664,Created,181708,a00N300001Cbh8PIAR,,Created,
 9010906,Exist - No Resume,181706,a00N300001CcRxaIAF,,N/A (candidate not in SF),
 9010906,Exist - No Resume,181707,a00N300001CcRxaIAF,,N/A (candidate not in SF),
 9010907,Exist,181706,a00N300001Cd0ldIAB,a02N300000qLa2XIAS,Exist,
-9010915,Exist - No Resume,181708,a00N300001FTd6WIAT,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9010915,Exist - No Resume,179303,a00N300001FTd6WIAT,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9010915,Created,181708,a00N300001FTd6WIAT,,Created,
+9010915,Created,179303,a00N300001FTd6WIAT,,Created,
 9010921,Exist,181874,a00N300001Ccyf1IAB,a02N300000tR2VlIAK,Not Exist,
 9010926,Exist,181706,a00N300001CdMr1IAF,a02N300000qLa2XIAS,Exist,
 9010941,Exist,181874,a00N300001CddOiIAJ,a02N300000tR2VlIAK,Not Exist,
@@ -3713,7 +3713,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9010948,Exist,181707,a00N300001CdyheIAB,a02N300000qLSrPIAW,Exist,
 9010948,Exist,181708,a00N300001CdyheIAB,a02N300000qLZT3IAO,Exist,
 9010948,Exist,181706,a00N300001CdyheIAB,a02N300000qLa2XIAS,Exist,
-9010965,Exist - No Resume,181706,a00N300001CeNbOIAV,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9010965,Created,181706,a00N300001CeNbOIAV,,Created,
 9010979,Exist,181872,a00N300001CeagZIAR,a02N300000tR2VkIAK,Not Exist,
 9010996,Exist,181872,a00N300001GBL2qIAH,a02N300000tR2VkIAK,Not Exist,
 9010998,Exist,181872,a00N300001CfD20IAF,a02N300000tR2VkIAK,Not Exist,
@@ -3846,7 +3846,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9011775,Not Exist,181874,,,N/A (candidate not in SF),
 9011779,Exist,181872,a00N300001CrxqYIAR,a02N300000tR2VkIAK,Not Exist,
 9011780,Exist,181872,a00N300001CrpD5IAJ,a02N300000tR2VkIAK,Not Exist,
-9011783,Exist - No Resume,179303,a00N300001CrhytIAB,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9011783,Created,179303,a00N300001CrhytIAB,,Created,
 9011784,Exist,181706,a00N300001CrhyqIAB,a02N300000qLa2XIAS,Exist,
 9011786,Exist,181707,a00N300001CrhyrIAB,a02N300000qLSrPIAW,Exist,
 9011787,Exist,181874,a00N300001CrhysIAB,a02N300000tR2VlIAK,Not Exist,
@@ -3872,7 +3872,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9011940,Exist,181872,a00N300001CthbRIAR,a02N300000tR2VkIAK,Not Exist,
 9011955,Exist,179303,a00N300001CtqElIAJ,a02N300000qJg7FIAS,Exist,
 9011959,Exist,181874,a00N300001Cu2mJIAR,a02N300000tR2VlIAK,Not Exist,
-9011961,Exist - No Resume,181706,a00N300001CuWQrIAN,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9011961,Created,181706,a00N300001CuWQrIAN,,Created,
 9011963,Exist,181708,a00N300001CuEtjIAF,a02N300000qLZT3IAO,Exist,
 9011967,Created,181707,a00N300001CuGHNIA3,,Created,
 9011968,Exist,181874,a00N300001CuGu3IAF,a02N300000tR2VlIAK,Not Exist,
@@ -3898,7 +3898,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9012061,Exist,181872,a00N300001Cx0HYIAZ,a02N300000tR2VkIAK,Not Exist,
 9012062,Exist,181706,a00N300001Cwy6PIAR,a02N300000qLa2XIAS,Exist,
 9012063,Exist,181874,a00N300001GBL6qIAH,a02N300000tR2VlIAK,Not Exist,
-9012066,Exist - No Resume,181708,a00N300001Cx5EFIAZ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9012066,Created,181708,a00N300001Cx5EFIAZ,,Created,
 9012069,Exist,179306,a00N300001CxJqSIAV,a02N300000qJPOAIA4,Exist,
 9012070,Exist,181707,a00N300001CxGkZIAV,a02N300000qLSrPIAW,Exist,
 9012072,Exist,181707,a00N300001CxLXLIA3,a02N300000qLSrPIAW,Exist,
@@ -3946,7 +3946,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9012253,Exist,179303,a00N300001GBLFsIAP,a02N300000qJg7FIAS,Not Exist,
 9012253,Exist,179306,a00N300001GBLFsIAP,a02N300000qJPOAIA4,Not Exist,
 9012254,Exist,179306,a00N300001DEdr7IAD,a02N300000qJPOAIA4,Exist,
-9012255,Exist - No Resume,179306,a00N300001DHBk1IAH,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9012255,Created,179306,a00N300001DHBk1IAH,,Created,
 9012256,Exist,179306,a00N300001GBLFtIAP,a02N300000qJPOAIA4,Not Exist,
 9012258,Exist,179306,a00N300001DHBk1IAH,a02N300000qJPOAIA4,Exist,
 9012259,Not Exist,179306,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
@@ -3964,7 +3964,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9012400,Created,181708,a00N300001AIjLWIA1,,Created,
 9012400,Created,181707,a00N300001AIjLWIA1,,Created,
 9012401,Created,181708,a00N300001E2XCIIA3,,Created,
-9012404,Exist - No Resume,179306,a00N300001DXNsMIAX,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9012404,Created,179306,a00N300001DXNsMIAX,,Created,
 9012406,Exist,179303,a00N300001GBLGNIA5,a02N300000qJg7FIAS,Not Exist,
 9012407,Exist,181707,a00N300001D7NMlIAN,a02N300000qLSrPIAW,Exist,
 9012408,Exist,179306,a00N300001AgmhxIAB,a02N300000qJPOAIA4,Not Exist,
@@ -3979,7 +3979,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9012439,Exist,179303,a00N300001D94dyIAB,a02N300000qJg7FIAS,Exist,
 9012470,Exist,181706,a00N300001D9nZRIAZ,a02N300000qLa2XIAS,Exist,
 9012471,Exist,181707,a00N300001D9haWIAR,a02N300000qLSrPIAW,Exist,
-9012477,Exist - No Resume,181706,a00N300001D9mK5IAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9012477,Created,181706,a00N300001D9mK5IAJ,,Created,
 9012481,Exist,181707,a00N300001DA3CjIAL,a02N300000qLSrPIAW,Exist,
 9012490,Created,181706,a00N300001DAfEoIAL,,Created,
 9012493,Exist,179306,a00N300001DAPJoIAP,a02N300000qJPOAIA4,Exist,
@@ -4081,8 +4081,8 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9013321,Created,181708,a00N300001DXRStIAP,,Created,
 9013388,Created,181706,a00N300001DZBojIAH,,Created,
 9013391,Exist - No Resume,179303,a00N300001I5NDuIAN,,N/A (candidate not in SF),
-9013394,Exist - No Resume,182162,a00N300001DksLjIAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9013394,Exist - No Resume,181707,a00N300001DksLjIAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9013394,Created,182162,a00N300001DksLjIAJ,,Created,
+9013394,Created,181707,a00N300001DksLjIAJ,,Created,
 9013397,Exist,179303,a00N300001DZT8wIAH,a02N300000qJg7FIAS,Exist,
 9013397,Exist,181707,a00N300001DZT8wIAH,a02N300000qLSrPIAW,Not Exist,
 9013397,Exist,181708,a00N300001DZT8wIAH,a02N300000qLZT3IAO,Not Exist,
@@ -4116,7 +4116,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9013537,Created,179306,a00N300001DgUeQIAV,,Created,
 9013549,Exist - No Resume,179303,a00N300001DhsLLIAZ,,N/A (candidate not in SF),
 9013551,Created,179303,a00N300001Dh0CrIAJ,,Created,
-9013641,Exist - No Resume,181706,a00N300001E1m8WIAR,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9013641,Created,181706,a00N300001E1m8WIAR,,Created,
 9013717,Created,179303,a00N300001I5RxbIAF,,Created,
 9013723,Created,179306,a00N300001E4vgiIAB,,Created,
 9013728,Not Exist,181706,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
@@ -4159,7 +4159,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9013935,Exist - No Resume,181707,a00N300001DrJ4bIAF,,N/A (candidate not in SF),
 9013939,Created,181708,a00N300001D4ZYlIAN,,Created,
 9013940,Created,181706,a00N300001DrVnOIAV,,Created,
-9013941,Exist - No Resume,181706,a00N300001DruaUIAR,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9013941,Created,181706,a00N300001DruaUIAR,,Created,
 9013943,Created,179306,a00N300001I5Mq7IAF,,Created,
 9013966,Created,179306,a00N300001DsZCQIA3,,Created,
 9013967,Exist - No Resume,181707,a00N300001DsZCRIA3,,N/A (candidate not in SF),
@@ -4175,7 +4175,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9013977,Exist,179306,a00N300001E6Z9DIAV,a02N300000qJPOAIA4,Not Exist,
 9013981,Not Exist,181706,,,N/A (candidate not in SF),
 9013985,Created,181708,a00N300001FZXpaIAH,,Created,
-9014065,Exist - No Resume,181708,a00N300001F9bifIAB,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9014065,Created,181708,a00N300001F9bifIAB,,Created,
 9014066,Created,181706,a00N300001Dt6w7IAB,,Created,
 9014066,Created,181708,a00N300001Dt6w7IAB,,Created,
 9014072,Created,181706,a00N300001Duz5dIAB,,Created,
@@ -4202,7 +4202,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9014120,Created,179306,a00N300001I5MqIIAV,,Created,
 9014121,Created,179306,a00N300001I5MkvIAF,,Created,
 9014122,Exist - No Resume,179306,a00N300001I5NEBIA3,,N/A (candidate not in SF),
-9014125,Exist - No Resume,181707,a00N300001DygFhIAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9014125,Created,181707,a00N300001DygFhIAJ,,Created,
 9014126,Exist - No Resume,179306,a00N300001E5eUEIAZ,,N/A (candidate not in SF),
 9014127,Created,179306,a00N300001I5MKLIA3,,Created,
 9014128,Created,179306,a00N300001I5MG9IAN,,Created,
@@ -4254,7 +4254,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9014201,Created,181707,a00N300001E2Lz7IAF,,Created,
 9014202,Exist,179306,a00N300001ECGRxIAP,a02N300000qJPOAIA4,Exist,
 9014202,Exist,179303,a00N300001ECGRxIAP,a02N300000qJg7FIAS,Not Exist,
-9014209,Exist - No Resume,181707,a00N300001E2XCIIA3,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9014209,Created,181707,a00N300001E2XCIIA3,,Created,
 9014212,Exist,181706,a00N300001E2ScbIAF,a02N300000qLa2XIAS,Not Exist,
 9014212,Exist,179306,a00N300001E2ScbIAF,a02N300000qJPOAIA4,Not Exist,
 9014214,Created,181707,a00N300001E0GicIAF,,Created,
@@ -4268,7 +4268,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9014238,Created,179306,a00N300001I5MIHIA3,,Created,
 9014243,Not Exist,181708,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9014245,Created,179306,a00N300001I5MrZIAV,,Created,
-9014246,Exist - No Resume,181706,a00N300001EUPDVIA5,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9014246,Created,181706,a00N300001EUPDVIA5,,Created,
 9014247,Created,182162,a00N300001E3aXtIAJ,,Created,
 9014247,Created,181707,a00N300001E3aXtIAJ,,Created,
 9014248,Created,181707,a00N300001I5MEiIAN,,Created,
@@ -4288,8 +4288,8 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9014263,Created,181706,a00N300001E4DhHIAV,,Created,
 9014264,Not Exist,181706,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9014265,Not Exist,179303,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9014269,Exist - No Resume,181708,a00N300001EhCdNIAV,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9014270,Exist - No Resume,181706,a00N300001FLyD5IAL,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9014269,Created,181708,a00N300001EhCdNIAV,,Created,
+9014270,Created,181706,a00N300001FLyD5IAL,,Created,
 9014274,Exist - No Resume,181707,a00N300001EVHIcIAP,,N/A (candidate not in SF),
 9014275,Created,179306,a00N300001E6G1WIAV,,Created,
 9014295,Created,181706,a00N300001E4gePIAR,,Created,
@@ -4302,7 +4302,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9014343,Created,181707,a00N300001E4suQIAR,,Created,
 9014350,Exist - No Resume,181707,a00N300001E5fFRIAZ,,N/A (candidate not in SF),
 9014351,Created,179306,a00N300001E7QZvIAN,,Created,
-9014357,Exist - No Resume,181706,a00N300001FVATPIA5,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9014357,Created,181706,a00N300001FVATPIA5,,Created,
 9014360,Exist,179306,a00N300001EGOHGIA5,a02N300000qJPOAIA4,Not Exist,
 9014360,Exist,181707,a00N300001EGOHGIA5,a02N300000qLSrPIAW,Not Exist,
 9014366,Created,181708,a00N300001E5lQsIAJ,,Created,
@@ -4355,7 +4355,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9014491,Created,181707,a00N300001EAxOFIA1,,Created,
 9014493,Exist - No Resume,181707,a00N300001EBIHJIA5,,N/A (candidate not in SF),
 9014494,Exist - No Resume,181706,a00N300001EBBHWIA5,,N/A (candidate not in SF),
-9014505,Exist - No Resume,181706,a00N300001EC5ebIAD,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9014505,Created,181706,a00N300001EC5ebIAD,,Created,
 9014562,Exist - No Resume,181707,a00N300001EFFuOIAX,,N/A (candidate not in SF),
 9014563,Not Exist,181708,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9014564,Exist,179303,a00N300001EGXZ0IAP,a02N300000qJg7FIAS,Exist,
@@ -4366,7 +4366,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9014584,Created,179306,a00N300001I5MLbIAN,,Created,
 9014588,Exist - No Resume,181707,a00N300001EFmyQIAT,,N/A (candidate not in SF),
 9014588,Exist - No Resume,181706,a00N300001EFmyQIAT,,N/A (candidate not in SF),
-9014598,Exist - No Resume,179306,a00N300001EZX3mIAH,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9014598,Created,179306,a00N300001EZX3mIAH,,Created,
 9014600,Created,179306,a00N300001EGLcpIAH,,Created,
 9014637,Created,179306,a00N300001I5MtNIAV,,Created,
 9014638,Created,179306,a00N300001I5MF0IAN,,Created,
@@ -4374,7 +4374,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9014642,Created,181706,a00N300001EFxlsIAD,,Created,
 9014644,Not Exist,181706,,,N/A (candidate not in SF),
 9014646,Created,181706,a00N300001EGbw1IAD,,Created,
-9014648,Exist - No Resume,181708,a00N300001EFxlsIAD,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9014648,Created,181708,a00N300001EFxlsIAD,,Created,
 9014654,Not Exist,181707,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9014657,Exist - No Resume,181706,a00N300001EGaa4IAD,,N/A (candidate not in SF),
 9014666,Created,181706,a00N300001EGgPKIA1,,Created,
@@ -4393,7 +4393,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9014698,Created,181707,a00N300001EHPbBIAX,,Created,
 9014699,Created,181706,a00N300001EHPxkIAH,,Created,
 9014700,Created,181707,a00N300001EHPJaIAP,,Created,
-9014711,Exist - No Resume,181706,a00N300001FgpBfIAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9014711,Created,181706,a00N300001FgpBfIAJ,,Created,
 9014712,Exist - No Resume,179303,a00N300001EHZbzIAH,,N/A (candidate not in SF),
 9014713,Exist,179303,a00N300001EiEAAIA3,a02N300000qJg7FIAS,Exist,
 9014720,Created,181707,a00N300001EHo36IAD,,Created,
@@ -4412,8 +4412,8 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9014795,Created,181706,a00N300001EJwnpIAD,,Created,
 9014800,Created,181706,a00N300001Ej3z1IAB,,Created,
 9014801,Exist - No Resume,179303,a00N300001EKE9bIAH,,N/A (candidate not in SF),
-9014819,Exist - No Resume,181707,a00N300001DAQHWIA5,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9014819,Exist - No Resume,181706,a00N300001DAQHWIA5,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9014819,Created,181707,a00N300001DAQHWIA5,,Created,
+9014819,Created,181706,a00N300001DAQHWIA5,,Created,
 9014821,Created,181706,a00N300001EL66rIAD,,Created,
 9014826,Exist,179306,a00N300001EKfl5IAD,a02N300000qJPOAIA4,Exist,
 9014826,Exist,179303,a00N300001EKfl5IAD,a02N300000qJg7FIAS,Not Exist,
@@ -4421,7 +4421,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9014828,Created,179303,a00N300001ELMMmIAP,,Created,
 9014838,Created,179306,a00N300001EcRbQIAV,,Created,
 9014840,Not Exist,181706,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9014842,Exist - No Resume,179303,a00N300001FEcafIAD,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9014842,Created,179303,a00N300001FEcafIAD,,Created,
 9014845,Exist,179306,a00N300001ELc3VIAT,a02N300000qJPOAIA4,Not Exist,
 9014845,Exist,179303,a00N300001ELc3VIAT,a02N300000qJg7FIAS,Exist,
 9014846,Exist,181707,a00N300001ELqBOIA1,a02N300000qLSrPIAW,Exist,
@@ -4440,7 +4440,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9014863,Created,181706,a00N300001EMV6KIAX,,Created,
 9014881,Created,179303,a00N300001ENqIPIA1,,Created,
 9014907,Created,181706,a00N300001EONqzIAH,,Created,
-9014910,Exist - No Resume,181708,a00N300001EOEnkIAH,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9014910,Created,181708,a00N300001EOEnkIAH,,Created,
 9014912,Created,181708,a00N300001EOAsLIAX,,Created,
 9014919,Exist - No Resume,179306,a00N300001I5NEFIA3,,N/A (candidate not in SF),
 9014920,Created,179306,a00N300001EX2AgIAL,,Created,
@@ -4487,12 +4487,12 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9015050,Exist,181708,a00N300001EV0MmIAL,a02N300000qLZT3IAO,Exist,
 9015051,Created,181707,a00N300001EVB1uIAH,,Created,
 9015052,Created,181707,a00N300001EVDekIAH,,Created,
-9015055,Exist - No Resume,181706,a00N300001EVHIcIAP,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9015055,Created,181706,a00N300001EVHIcIAP,,Created,
 9015057,Exist - No Resume,181707,a00N300001I5NDlIAN,,N/A (candidate not in SF),
 9015057,Exist - No Resume,181706,a00N300001I5NDlIAN,,N/A (candidate not in SF),
 9015061,Created,181706,a00N300001EVLqoIAH,,Created,
-9015065,Exist - No Resume,181707,a00N300001FKfhFIAT,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9015065,Exist - No Resume,179303,a00N300001FKfhFIAT,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9015065,Created,181707,a00N300001FKfhFIAT,,Created,
+9015065,Created,179303,a00N300001FKfhFIAT,,Created,
 9015105,Created,179303,a00N300001EWUYlIAP,,Created,
 9015123,Not Exist,181707,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9015124,Exist - No Resume,181706,a00N300001EWntBIAT,,N/A (candidate not in SF),
@@ -4528,7 +4528,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9015200,Created,181707,a00N300001EXzLxIAL,,Created,
 9015200,Created,179303,a00N300001EXzLxIAL,,Created,
 9015238,Exist - No Resume,179303,a00N300001EYtkkIAD,,N/A (candidate not in SF),
-9015241,Exist - No Resume,181708,a00N300001EYQPWIA5,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9015241,Created,181708,a00N300001EYQPWIA5,,Created,
 9015243,Created,182162,a00N300001EZ07uIAD,,Created,
 9015244,Created,179306,a00N300001Ec7nuIAB,,Created,
 9015246,Exist - No Resume,181707,a00N300001I5NDGIA3,,N/A (candidate not in SF),
@@ -4555,12 +4555,12 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9015299,Created,182162,a00N300001EaeGEIAZ,,Created,
 9015300,Created,181706,a00N300001EaqXXIAZ,,Created,
 9015301,Created,179306,a00N300001I5Ms0IAF,,Created,
-9015304,Exist - No Resume,181706,a00N300001Eal9lIAB,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9015304,Created,181706,a00N300001Eal9lIAB,,Created,
 9015305,Not Exist,181707,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9015307,Created,181706,a00N300001EahilIAB,,Created,
 9015315,Created,181706,a00N300001EbKk5IAF,,Created,
 9015317,Exist - No Resume,181707,a00N300001EbZSzIAN,,N/A (candidate not in SF),
-9015318,Exist - No Resume,179303,a00N300001EbKk5IAF,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9015318,Created,179303,a00N300001EbKk5IAF,,Created,
 9015320,Created,181706,a00N300001EbnZ9IAJ,,Created,
 9015320,Created,181707,a00N300001EbnZ9IAJ,,Created,
 9015320,Created,181708,a00N300001EbnZ9IAJ,,Created,
@@ -4587,8 +4587,8 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9015458,Created,181707,a00N300001EgJCGIA3,,Created,
 9015462,Created,179303,a00N300001EgKTGIA3,,Created,
 9015462,Created,181707,a00N300001EgKTGIA3,,Created,
-9015466,Exist - No Resume,181706,a00N300001EgzOMIAZ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9015466,Exist - No Resume,179306,a00N300001EgzOMIAZ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9015466,Created,181706,a00N300001EgzOMIAZ,,Created,
+9015466,Created,179306,a00N300001EgzOMIAZ,,Created,
 9015469,Created,181707,a00N300001EhCdNIAV,,Created,
 9015475,Exist - No Resume,181706,a00N300001EhFjRIAV,,N/A (candidate not in SF),
 9015476,Created,179303,a00N300001FBgnaIAD,,Created,
@@ -4610,7 +4610,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9015582,Exist,179303,a00N300001EiUd5IAF,a02N300000qJg7FIAS,Not Exist,
 9015582,Exist,179306,a00N300001EiUd5IAF,a02N300000qJPOAIA4,Exist,
 9015583,Created,181707,a00N300001EiUd6IAF,,Created,
-9015587,Exist - No Resume,181707,a00N300001Ej3z1IAB,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9015587,Created,181707,a00N300001Ej3z1IAB,,Created,
 9015588,Created,181706,a00N300001F9qccIAB,,Created,
 9015588,Created,181708,a00N300001F9qccIAB,,Created,
 9015596,Created,181707,a00N300001I5MFRIA3,,Created,
@@ -4628,7 +4628,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9015696,Created,181707,a00N300001FW5EzIAL,,Created,
 9015697,Created,182162,a00N300001I5MJNIA3,,Created,
 9015697,Created,179303,a00N300001I5MJNIA3,,Created,
-9015700,Exist - No Resume,181706,a00N300001FkxDdIAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9015700,Created,181706,a00N300001FkxDdIAJ,,Created,
 9015703,Exist - No Resume,179306,a00N300001I5NDYIA3,,N/A (candidate not in SF),
 9015704,Created,179306,a00N300001I5MvAIAV,,Created,
 9015705,Exist - No Resume,181706,a00N300001EV82PIAT,,N/A (candidate not in SF),
@@ -4664,7 +4664,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9016089,Not Exist,181707,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9016213,Not Exist,181707,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9016214,Not Exist,181706,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9016216,Exist - No Resume,181707,a00N300001F7Vk2IAF,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9016216,Created,181707,a00N300001F7Vk2IAF,,Created,
 9016219,Created,179306,a00N300001FB2v0IAD,,Created,
 9016222,Exist - No Resume,181706,a00N300001DBSKSIA5,,N/A (candidate not in SF),
 9016222,Exist - No Resume,179306,a00N300001DBSKSIA5,,N/A (candidate not in SF),
@@ -4680,7 +4680,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9016470,Exist - No Resume,181707,a00N300001FA7K4IAL,,N/A (candidate not in SF),
 9016471,Created,181707,a00N300001F9bifIAB,,Created,
 9016475,Created,181706,a00N300001F9VWjIAN,,Created,
-9016478,Exist - No Resume,181708,a00N300001FP75JIAT,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9016478,Created,181708,a00N300001FP75JIAT,,Created,
 9016482,Exist - No Resume,179303,a00N300001FA4KlIAL,,N/A (candidate not in SF),
 9016483,Created,181706,a00N300001I5MoMIAV,,Created,
 9016484,Exist - No Resume,181706,a00N300001I5NCyIAN,,N/A (candidate not in SF),
@@ -4702,7 +4702,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9016550,Created,179306,a00N300001I5MtQIAV,,Created,
 9016553,Created,179306,a00N300001FESHsIAP,,Created,
 9016553,Created,181706,a00N300001FESHsIAP,,Created,
-9016554,Exist - No Resume,181706,a00N300001FEc1DIAT,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9016554,Created,181706,a00N300001FEc1DIAT,,Created,
 9016556,Created,179303,a00N300001FEkBXIA1,,Created,
 9016556,Created,182162,a00N300001FEkBXIA1,,Created,
 9016557,Created,179306,a00N300001FEcafIAD,,Created,
@@ -4711,13 +4711,13 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9016602,Created,181706,a00N300001FFDDaIAP,,Created,
 9016603,Created,181706,a00N300001FFDDbIAP,,Created,
 9016603,Created,181707,a00N300001FFDDbIAP,,Created,
-9016606,Exist - No Resume,181707,a00N300001FNMd3IAH,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9016606,Created,181707,a00N300001FNMd3IAH,,Created,
 9016608,Created,179306,a00N300001FF0rcIAD,,Created,
-9016618,Exist - No Resume,181706,a00N300001FVL0jIAH,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9016618,Created,181706,a00N300001FVL0jIAH,,Created,
 9016619,Exist - No Resume,181706,a00N300001FFlH4IAL,,N/A (candidate not in SF),
 9016619,Exist - No Resume,181707,a00N300001FFlH4IAL,,N/A (candidate not in SF),
 9016620,Created,181706,a00N300001FFp7dIAD,,Created,
-9016621,Exist - No Resume,182162,a00N300001FFt4mIAD,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9016621,Created,182162,a00N300001FFt4mIAD,,Created,
 9016624,Created,181706,a00N300001FGD1yIAH,,Created,
 9016642,Created,181707,a00N300001FH3I5IAL,,Created,
 9016665,Created,179306,a00N300001I5MuHIAV,,Created,
@@ -4759,9 +4759,9 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9016764,Created,179303,a00N300001FKfhEIAT,,Created,
 9016765,Created,179303,a00N300001FKfhFIAT,,Created,
 9016765,Created,181707,a00N300001FKfhFIAT,,Created,
-9016766,Exist - No Resume,182162,a00N30000175m1BIAQ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9016766,Exist - No Resume,179306,a00N30000175m1BIAQ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9016766,Exist - No Resume,179303,a00N30000175m1BIAQ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9016766,Created,182162,a00N30000175m1BIAQ,,Created,
+9016766,Created,179306,a00N30000175m1BIAQ,,Created,
+9016766,Created,179303,a00N30000175m1BIAQ,,Created,
 9016768,Exist,179303,a00N300001FKxyrIAD,a02N300000qJg7FIAS,Exist,
 9016784,Created,181706,a00N300001AQwDRIA1,,Created,
 9016787,Created,181707,a00N300001HWRqpIAH,,Created,
@@ -4824,7 +4824,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9017653,Created,181706,a00N300001FSL0RIAX,,Created,
 9017686,Exist - No Resume,181706,a00N300001FSwvyIAD,,N/A (candidate not in SF),
 9017687,Exist - No Resume,181707,a00N300001GhmaqIAB,,N/A (candidate not in SF),
-9017693,Exist - No Resume,181706,a00N300001FSSmhIAH,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9017693,Created,181706,a00N300001FSSmhIAH,,Created,
 9017694,Not Exist,181707,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9017695,Created,181706,a00N300001FT4f1IAD,,Created,
 9017696,Created,179306,a00N300001FTZqtIAH,,Created,
@@ -4840,11 +4840,11 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9017748,Created,179306,a00N300001FXJimIAH,,Created,
 9017749,Created,179303,a00N300001FVY2iIAH,,Created,
 9017751,Exist - No Resume,181707,a00N300001BjYiAIAV,,N/A (candidate not in SF),
-9017755,Exist - No Resume,181708,a00N300001FVfVlIAL,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9017755,Created,181708,a00N300001FVfVlIAL,,Created,
 9017757,Created,181706,a00N300001FWI0fIAH,,Created,
 9017759,Created,181706,a00N300001FWI0gIAH,,Created,
-9017765,Exist - No Resume,179303,a00N300001FW5EzIAL,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9017768,Exist - No Resume,181706,a00N300001FWgpTIAT,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9017765,Created,179303,a00N300001FW5EzIAL,,Created,
+9017768,Created,181706,a00N300001FWgpTIAT,,Created,
 9017769,Created,179306,a00N300001FWiOBIA1,,Created,
 9017772,Created,181707,a00N300001FWiODIA1,,Created,
 9017772,Created,179303,a00N300001FWiODIA1,,Created,
@@ -4855,7 +4855,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9017977,Created,179303,a00N300001FXNxoIAH,,Created,
 9017977,Created,179306,a00N300001FXNxoIAH,,Created,
 9017978,Exist - No Resume,181708,a00N300001FXNxpIAH,,N/A (candidate not in SF),
-9017979,Exist - No Resume,179306,a00N300001GBIGyIAP,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9017979,Created,179306,a00N300001GBIGyIAP,,Created,
 9017985,Created,181706,a00N300001GbeUgIAJ,,Created,
 9017985,Created,181707,a00N300001GbeUgIAJ,,Created,
 9017986,Created,181706,a00N300001FYFd5IAH,,Created,
@@ -4864,7 +4864,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9017995,Created,181708,a00N300001FZOUYIA5,,Created,
 9017999,Created,181708,a00N300001DZCWEIA5,,Created,
 9017999,Created,181706,a00N300001DZCWEIA5,,Created,
-9018000,Exist - No Resume,181706,a00N300001FZap3IAD,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9018000,Created,181706,a00N300001FZap3IAD,,Created,
 9018001,Not Exist,181707,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9018039,Exist - No Resume,181706,a00N300001FazGkIAJ,,N/A (candidate not in SF),
 9018040,Created,179303,a00N300001Fb4MsIAJ,,Created,
@@ -4897,7 +4897,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9018108,Created,179306,a00N300001FezIEIAZ,,Created,
 9018109,Created,179306,a00N300001Fe7OIIAZ,,Created,
 9018111,Exist - No Resume,181706,a00N300001I5NDmIAN,,N/A (candidate not in SF),
-9018112,Exist - No Resume,179306,a00N300001Fe85pIAB,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9018112,Created,179306,a00N300001Fe85pIAB,,Created,
 9018113,Created,179306,a00N300001Fe99vIAB,,Created,
 9018114,Created,179306,a00N300001FeiagIAB,,Created,
 9018116,Created,179306,a00N300001I5MJzIAN,,Created,
@@ -4914,9 +4914,9 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9018133,Created,182162,a00N300001I5MqpIAF,,Created,
 9018141,Exist - No Resume,181706,a00N300001I5NEQIA3,,N/A (candidate not in SF),
 9018142,Created,179306,a00N300001I5MpFIAV,,Created,
-9018146,Exist - No Resume,179306,a00N300001I5MpFIAV,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9018146,Created,179306,a00N300001I5MpFIAV,,Created,
 9018170,Created,181706,a00N300001I5MorIAF,,Created,
-9018173,Exist - No Resume,181707,a00N300001BzhJ1IAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9018173,Created,181707,a00N300001BzhJ1IAJ,,Created,
 9018174,Created,181707,a00N300001I5MvTIAV,,Created,
 9018179,Exist - No Resume,181707,a00N300001H1J1VIAV,,N/A (candidate not in SF),
 9018179,Exist - No Resume,179306,a00N300001H1J1VIAV,,N/A (candidate not in SF),
@@ -4927,11 +4927,11 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9018190,Created,179306,a00N300001I5MIXIA3,,Created,
 9018266,Created,181706,a00N300001I5MtHIAV,,Created,
 9018280,Created,181706,a00N300001I5Mq8IAF,,Created,
-9018282,Exist - No Resume,179306,a00N3000018OZJ1IAO,,N/A (candidate not in SF),
-9018282,Exist - No Resume,181707,a00N3000018OZJ1IAO,,N/A (candidate not in SF),
-9018282,Exist - No Resume,182162,a00N3000018OZJ1IAO,,N/A (candidate not in SF),
+9018282,Created,179306,a00N3000018OZJ1IAO,,Created,
+9018282,Created,181707,a00N3000018OZJ1IAO,,Created,
+9018282,Created,182162,a00N3000018OZJ1IAO,,Created,
 9018288,Exist - No Resume,181706,a00N300001I5NDvIAN,,N/A (candidate not in SF),
-9018298,Exist - No Resume,181706,a00N300001BZlAEIA1,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9018298,Created,181706,a00N300001BZlAEIA1,,Created,
 9018312,Exist - No Resume,179306,a00N300001ERaBkIAL,,N/A (candidate not in SF),
 9018312,Exist - No Resume,181707,a00N300001ERaBkIAL,,N/A (candidate not in SF),
 9018313,Not Exist,181706,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
@@ -4951,15 +4951,15 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9018360,Created,179303,a00N300001Gu1J5IAJ,,Created,
 9018360,Created,179306,a00N300001Gu1J5IAJ,,Created,
 9018364,Created,181707,a00N300001FSSmhIAH,,Created,
-9018374,Exist - No Resume,179306,a00N3000016twhCIAQ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9018374,Exist - No Resume,182162,a00N3000016twhCIAQ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9018374,Exist - No Resume,179303,a00N3000016twhCIAQ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9018374,Created,179306,a00N3000016twhCIAQ,,Created,
+9018374,Created,182162,a00N3000016twhCIAQ,,Created,
+9018374,Created,179303,a00N3000016twhCIAQ,,Created,
 9018376,Created,181706,a00N300001I5Mw6IAF,,Created,
 9018377,Created,179306,a00N300001I5MLTIA3,,Created,
 9018379,Created,179306,a00N300001FvSUmIAN,,Created,
 9018400,Not Exist,181706,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9018401,Created,181707,a00N300001I5Ms1IAF,,Created,
-9018408,Exist - No Resume,181706,a00N300001780CpIAI,,N/A (candidate not in SF),
+9018408,Created,181706,a00N300001780CpIAI,,Created,
 9018409,Exist - No Resume,181706,a00N300001I5NEzIAN,,N/A (candidate not in SF),
 9018409,Exist - No Resume,182162,a00N300001I5NEzIAN,,N/A (candidate not in SF),
 9018411,Created,179303,a00N300001I5RBQIA3,,Created,
@@ -4986,7 +4986,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9018514,Not Exist,181706,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9018521,Not Exist,181706,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9018524,Not Exist,179303,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9018537,Exist - No Resume,181707,a00N300001ESytaIAD,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9018537,Created,181707,a00N300001ESytaIAD,,Created,
 9018544,Exist - No Resume,179306,a00N300001Fvnz5IAB,,N/A (candidate not in SF),
 9018545,Created,179303,a00N300001G2r3LIAR,,Created,
 9018545,Created,179306,a00N300001G2r3LIAR,,Created,
@@ -5025,7 +5025,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9019276,Created,181706,a00N300001I5MIhIAN,,Created,
 9019369,Created,179303,a00N300001I5MvvIAF,,Created,
 9019371,Not Exist,181707,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9019372,Exist - No Resume,181706,a00N300001GLXIbIAP,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9019372,Created,181706,a00N300001GLXIbIAP,,Created,
 9019571,Exist - No Resume,179303,a00N300001I5NE9IAN,,N/A (candidate not in SF),
 9019571,Exist - No Resume,181706,a00N300001I5NE9IAN,,N/A (candidate not in SF),
 9019579,Not Exist,181706,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
@@ -5055,7 +5055,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9019719,Created,179303,a00N300001GJfqXIAT,,Created,
 9019723,Not Exist,181708,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9019729,Not Exist,181706,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9019935,Exist - No Resume,181708,a00N300001EHPbBIAX,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9019935,Created,181708,a00N300001EHPbBIAX,,Created,
 9019947,Created,179303,a00N300001GKt9tIAD,,Created,
 9019947,Created,179306,a00N300001GKt9tIAD,,Created,
 9019956,Created,179306,a00N300001I5MK5IAN,,Created,
@@ -5063,7 +5063,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9019958,Created,179306,a00N300001GLXDlIAP,,Created,
 9020085,Created,179306,a00N300001I5MutIAF,,Created,
 9020206,Created,181707,a00N300001I5bgxIAB,,Created,
-9020207,Exist - No Resume,181706,a00N300001I5aOcIAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9020207,Created,181706,a00N300001I5aOcIAJ,,Created,
 9020208,Exist - No Resume,181706,a00N300001I5ND4IAN,,N/A (candidate not in SF),
 9020210,Created,179303,a00N300001GOWejIAH,,Created,
 9020211,Created,179303,a00N300001Cs73iIAB,,Created,
@@ -5071,7 +5071,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9020212,Created,181706,a00N300001I5MKtIAN,,Created,
 9020213,Created,181706,a00N300001I5MpQIAV,,Created,
 9020217,Created,181706,a00N300001GbyejIAB,,Created,
-9020232,Exist - No Resume,179303,a00N3000017zEhYIAU,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9020232,Created,179303,a00N3000017zEhYIAU,,Created,
 9020235,Created,181706,a00N300001BcJj0IAF,,Created,
 9020237,Created,181706,a00N300001I5AonIAF,,Created,
 9020238,Created,181707,a00N300001I5MqoIAF,,Created,
@@ -5087,9 +5087,9 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9020273,Created,181707,a00N300001Gbrd8IAB,,Created,
 9020276,Created,181706,a00N300001I5I82IAF,,Created,
 9020280,Created,181707,a00N300001I5MFQIA3,,Created,
-9020281,Exist - No Resume,181707,a00N300001AIjLWIA1,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9020281,Created,181707,a00N300001AIjLWIA1,,Created,
 9020282,Created,181707,a00N300001I5MF2IAN,,Created,
-9020283,Exist - No Resume,181706,a00N300001EhjZIIAZ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9020283,Created,181706,a00N300001EhjZIIAZ,,Created,
 9020284,Created,179303,a00N300001I5MqLIAV,,Created,
 9020290,Created,181707,a00N300001GWL7jIAH,,Created,
 9020290,Created,181706,a00N300001GWL7jIAH,,Created,
@@ -5142,8 +5142,8 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9020825,Created,181706,a00N300001I5MKcIAN,,Created,
 9020827,Created,179303,a00N300001I5MrAIAV,,Created,
 9020828,Created,181707,a00N300001I5MpeIAF,,Created,
-9020838,Exist - No Resume,182162,a00N3000019cceiIAA,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9020838,Exist - No Resume,179306,a00N3000019cceiIAA,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9020838,Created,182162,a00N3000019cceiIAA,,Created,
+9020838,Created,179306,a00N3000019cceiIAA,,Created,
 9020840,Created,179306,a00N300001I5MKNIA3,,Created,
 9020847,Exist - No Resume,182162,a00N300001I5NDsIAN,,N/A (candidate not in SF),
 9020848,Created,182162,a00N300001I5Mr1IAF,,Created,
@@ -5178,7 +5178,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9020917,Created,182162,a00N300001HAl1vIAD,,Created,
 9020919,Created,179303,a00N300001I5MrTIAV,,Created,
 9020921,Created,182162,a00N300001I5MKGIA3,,Created,
-9020922,Exist - No Resume,182162,a00N300001I5aOaIAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9020922,Created,182162,a00N300001I5aOaIAJ,,Created,
 9020927,Created,179306,a00N300001HBVJ7IAP,,Created,
 9020927,Created,182162,a00N300001HBVJ7IAP,,Created,
 9020928,Created,182162,a00N300001I5MquIAF,,Created,
@@ -5190,9 +5190,9 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9020933,Created,182162,a00N300001I5MIUIA3,,Created,
 9020934,Exist - No Resume,181706,a00N300001I5NDbIAN,,N/A (candidate not in SF),
 9020935,Exist - No Resume,179303,a00N300001EGOHGIA5,,N/A (candidate not in SF),
-9020936,Exist - No Resume,181706,a00N300001GnxqEIAR,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9020936,Created,181706,a00N300001GnxqEIAR,,Created,
 9020937,Exist - No Resume,182162,a00N300001HAcrQIAT,,N/A (candidate not in SF),
-9020938,Exist - No Resume,181707,a00N300001FMZ4eIAH,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9020938,Created,181707,a00N300001FMZ4eIAH,,Created,
 9020939,Exist - No Resume,179306,a00N300001GnsK9IAJ,,N/A (candidate not in SF),
 9020940,Created,181706,a00N300001I5RCoIAN,,Created,
 9020941,Created,181707,a00N300001I5MocIAF,,Created,
@@ -5211,7 +5211,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9020952,Created,181706,a00N300001I5MJnIAN,,Created,
 9020953,Exist - No Resume,182162,a00N300001I5NCwIAN,,N/A (candidate not in SF),
 9020954,Created,181706,a00N300001I5MqDIAV,,Created,
-9020967,Exist - No Resume,181706,a00N300001Bc5o5IAB,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9020967,Created,181706,a00N300001Bc5o5IAB,,Created,
 9020968,Created,179303,a00N300001I5MNDIA3,,Created,
 9020969,Created,181708,a00N300001I5Mp6IAF,,Created,
 9020970,Created,181707,a00N300001HapJUIAZ,,Created,
@@ -5220,8 +5220,8 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9020973,Exist - No Resume,181708,a00N300001I5RWNIA3,,N/A (candidate not in SF),
 9020974,Created,181706,a00N300001I5MrtIAF,,Created,
 9020975,Exist - No Resume,179303,a00N300001I5NFDIA3,,N/A (candidate not in SF),
-9020976,Exist - No Resume,179303,a00N300001FH9AqIAL,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9020976,Exist - No Resume,179306,a00N300001FH9AqIAL,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9020976,Created,179303,a00N300001FH9AqIAL,,Created,
+9020976,Created,179306,a00N300001FH9AqIAL,,Created,
 9020977,Created,179303,a00N300001I5MoDIAV,,Created,
 9020977,Created,182162,a00N300001I5MoDIAV,,Created,
 9020978,Created,179306,a00N300001HBOJKIA5,,Created,
@@ -5233,7 +5233,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9020982,Created,179303,a00N300001I5MqQIAV,,Created,
 9020983,Created,181707,a00N300001I5RWJIA3,,Created,
 9020984,Created,181706,a00N300001I5MtcIAF,,Created,
-9020985,Exist - No Resume,179303,a00N300001H5QHOIA3,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9020985,Created,179303,a00N300001H5QHOIA3,,Created,
 9020986,Created,181706,a00N300001I5RWIIA3,,Created,
 9020987,Created,179303,a00N300001H5QHOIA3,,Created,
 9020988,Exist - No Resume,181708,a00N300001BaBivIAF,,N/A (candidate not in SF),
@@ -5249,19 +5249,19 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9020997,Exist - No Resume,181707,a00N300001I5ND2IAN,,N/A (candidate not in SF),
 9020998,Created,181707,a00N300001I55KTIAZ,,Created,
 9020999,Created,181707,a00N300001I5MtmIAF,,Created,
-9021000,Exist - No Resume,179303,a00N300001E53WCIAZ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9021000,Created,179303,a00N300001E53WCIAZ,,Created,
 9021001,Created,182162,a00N300001I5MILIA3,,Created,
 9021002,Created,179306,a00N300001H07idIAB,,Created,
 9021003,Created,179303,a00N300001APYmgIAH,,Created,
 9021004,Created,181706,a00N300001CnvnJIAR,,Created,
-9021005,Exist - No Resume,181708,a00N300001FUveGIAT,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9021005,Created,181708,a00N300001FUveGIAT,,Created,
 9021006,Exist - No Resume,181706,a00N300001I5NCnIAN,,N/A (candidate not in SF),
 9021007,Not Exist,179303,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9021008,Created,181706,a00N300001I5MqVIAV,,Created,
-9021009,Exist - No Resume,179306,a00N300001FZOUYIA5,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9021009,Created,179306,a00N300001FZOUYIA5,,Created,
 9021010,Created,181706,a00N300001I5MIzIAN,,Created,
 9021011,Created,179303,a00N300001I5MIBIA3,,Created,
-9021012,Exist - No Resume,181708,a00N300001I5aOYIAZ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9021012,Created,181708,a00N300001I5aOYIAZ,,Created,
 9021013,Created,179303,a00N300001I5MuBIAV,,Created,
 9021014,Created,181706,a00N300001I5MGGIA3,,Created,
 9021015,Created,181707,a00N300001GuateIAB,,Created,
@@ -5281,9 +5281,9 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9021043,Created,179306,a00N300001H0YQrIAN,,Created,
 9021044,Created,182162,a00N300001I3LLBIA3,,Created,
 9021059,Not Exist,181706,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9021062,Exist - No Resume,181707,a00N300001E1gnqIAB,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9021062,Created,181707,a00N300001E1gnqIAB,,Created,
 9021064,Created,181706,a00N300001I5MFyIAN,,Created,
-9021074,Exist - No Resume,182162,a00N300001I3LLBIA3,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9021074,Created,182162,a00N300001I3LLBIA3,,Created,
 9021075,Created,182162,a00N300001I5MLzIAN,,Created,
 9021075,Created,179306,a00N300001I5MLzIAN,,Created,
 9021079,Created,181706,a00N300001I4qTbIAJ,,Created,
@@ -5293,7 +5293,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9021087,Created,179303,a00N300001GzvR6IAJ,,Created,
 9021088,Created,179303,a00N300001I5MqbIAF,,Created,
 9021091,Created,181707,a00N300001I5FJQIA3,,Created,
-9021092,Exist - No Resume,182162,a00N3000018ulvLIAQ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9021092,Created,182162,a00N3000018ulvLIAQ,,Created,
 9021095,Created,181707,a00N300001I5Mu5IAF,,Created,
 9021096,Created,181706,a00N300001I5MJ0IAN,,Created,
 9021097,Created,181706,a00N300001F7XwAIAV,,Created,
@@ -5302,7 +5302,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9021105,Created,181706,a00N300001I5MM9IAN,,Created,
 9021106,Created,181706,a00N300001I5Ms6IAF,,Created,
 9021107,Created,182162,a00N300001FFt4mIAD,,Created,
-9021111,Exist - No Resume,181706,a00N300001FdxvJIAR,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9021111,Created,181706,a00N300001FdxvJIAR,,Created,
 9021113,Created,181706,a00N300001I5Mv7IAF,,Created,
 9021115,Created,179303,a00N300001GzoXfIAJ,,Created,
 9021115,Created,182162,a00N300001GzoXfIAJ,,Created,
@@ -5320,8 +5320,8 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9021133,Created,179303,a00N300001H6ZbuIAF,,Created,
 9021136,Created,181707,a00N300001I5MqCIAV,,Created,
 9021149,Created,182162,a00N300001EvOamIAF,,Created,
-9021159,Exist - No Resume,179303,a00N3000019iyPdIAI,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9021162,Exist - No Resume,181707,a00N300001G7FdNIAV,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9021159,Created,179303,a00N3000019iyPdIAI,,Created,
+9021162,Created,181707,a00N300001G7FdNIAV,,Created,
 9021164,Created,179303,a00N300001G7FdNIAV,,Created,
 9021167,Created,181707,a00N300001I5MrhIAF,,Created,
 9021171,Created,181706,a00N300001I5MNqIAN,,Created,
@@ -5332,8 +5332,8 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9021185,Exist - No Resume,182162,a00N300001I5NCgIAN,,N/A (candidate not in SF),
 9021194,Not Exist,181706,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9021198,Created,181707,a00N300001H5TiDIAV,,Created,
-9021199,Exist - No Resume,181706,a00N300001I5MJ5IAN,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9021200,Exist - No Resume,181707,a00N300001EL66rIAD,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9021199,Created,181706,a00N300001I5MJ5IAN,,Created,
+9021200,Created,181707,a00N300001EL66rIAD,,Created,
 9021201,Exist - No Resume,181707,a00N300001I5NEnIAN,,N/A (candidate not in SF),
 9021203,Created,179303,a00N300001I5MK3IAN,,Created,
 9021205,Exist - No Resume,181707,a00N300001GywZ5IAJ,,N/A (candidate not in SF),
@@ -5353,22 +5353,22 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9021260,Created,181706,a00N300001I5MIGIA3,,Created,
 9021261,Created,181707,a00N300001I5MqsIAF,,Created,
 9021265,Created,179303,a00N300001I5MrxIAF,,Created,
-9021267,Exist - No Resume,181706,a00N300001BZw8rIAD,,N/A (candidate not in SF),
+9021267,Created,181706,a00N300001BZw8rIAD,,Created,
 9021269,Created,181707,a00N300001H9YrVIAV,,Created,
 9021269,Created,179303,a00N300001H9YrVIAV,,Created,
 9021271,Exist - No Resume,179303,a00N300001HcMgPIAV,,N/A (candidate not in SF),
 9021275,Created,181707,a00N300001I5MLNIA3,,Created,
 9021276,Created,181707,a00N300001I5MubIAF,,Created,
 9021277,Exist - No Resume,179303,a00N3000019Z127IAC,,N/A (candidate not in SF),
-9021297,Exist - No Resume,179303,a00N300001FBgnaIAD,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9021297,Created,179303,a00N300001FBgnaIAD,,Created,
 9021315,Created,182162,a00N300001I5MI0IAN,,Created,
 9021319,Created,182162,a00N300001I5MvjIAF,,Created,
 9021321,Exist - No Resume,181707,a00N300001GzVIJIA3,,N/A (candidate not in SF),
-9021325,Exist - No Resume,179303,a00N300001I5aOdIAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9021325,Created,179303,a00N300001I5aOdIAJ,,Created,
 9021359,Created,181706,a00N300001I5MoQIAV,,Created,
 9021359,Created,182162,a00N300001I5MoQIAV,,Created,
 9021466,Created,181706,a00N300001I5FJgIAN,,Created,
-9021488,Exist - No Resume,181707,a00N300001FSSmjIAH,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9021488,Created,181707,a00N300001FSSmjIAH,,Created,
 9021502,Created,181707,a00N300001I5MsMIAV,,Created,
 9021504,Created,181708,a00N300001I5RWHIA3,,Created,
 9021514,Created,181707,a00N300001H3XJxIAN,,Created,
@@ -5387,8 +5387,8 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9021549,Created,181707,a00N300001H2y93IAB,,Created,
 9021549,Created,179306,a00N300001H2y93IAB,,Created,
 9021550,Created,181707,a00N300001I5FJSIA3,,Created,
-9021551,Exist - No Resume,179303,a00N300001I5MvvIAF,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9021551,Exist - No Resume,181707,a00N300001I5MvvIAF,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9021551,Created,179303,a00N300001I5MvvIAF,,Created,
+9021551,Created,181707,a00N300001I5MvvIAF,,Created,
 9021552,Not Exist,181706,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
 9021553,Created,181707,a00N300001I5E4KIAV,,Created,
 9021555,Exist - No Resume,181707,a00N300001I5NEDIA3,,N/A (candidate not in SF),
@@ -5408,7 +5408,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9021587,Created,181707,a00N300001I5MG6IAN,,Created,
 9021588,Created,182162,a00N300001I5MvfIAF,,Created,
 9021590,Created,181706,a00N300001I5MomIAF,,Created,
-9021591,Exist - No Resume,179303,a00N300001I5aObIAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9021591,Created,179303,a00N300001I5aObIAJ,,Created,
 9021595,Created,181706,a00N300001I5MI1IAN,,Created,
 9021607,Created,181707,a00N300001H91pJIAR,,Created,
 9021655,Created,179303,a00N300001I5MJFIA3,,Created,
@@ -5506,7 +5506,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9022035,Created,182162,a00N300001I5MqPIAV,,Created,
 9022037,Created,179303,a00N300001HdOTBIA3,,Created,
 9022041,Created,182162,a00N300001I5MEfIAN,,Created,
-9022042,Exist - No Resume,182162,a00N300001FMl40IAD,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9022042,Created,182162,a00N300001FMl40IAD,,Created,
 9022049,Created,181707,a00N300001I5RWKIA3,,Created,
 9022052,Created,179303,a00N300001I5MrSIAV,,Created,
 9022053,Exist - No Resume,181707,a00N300001BaBivIAF,,N/A (candidate not in SF),
@@ -5519,7 +5519,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9022073,Created,179303,a00N300001I5MolIAF,,Created,
 9022075,Created,181707,a00N300001I5MFEIA3,,Created,
 9022081,Created,182162,a00N300001I5MKAIA3,,Created,
-9022091,Exist - No Resume,179303,a00N300001AJJf1IAH,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9022091,Created,179303,a00N300001AJJf1IAH,,Created,
 9022092,Exist - No Resume,182162,a00N300001I5aOgIAJ,,N/A (candidate not in SF),
 9022099,Created,181707,a00N300001I5MJQIA3,,Created,
 9022100,Created,182162,a00N300001I5MD6IAN,,Created,
@@ -5531,7 +5531,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9022114,Created,182162,a00OL000003rcF7YAI,,Created,
 9022115,Created,182162,a00N300001I5MvaIAF,,Created,
 9022116,Created,181707,a00N300001I5MsFIAV,,Created,
-9022118,Exist - No Resume,182162,a00N300001I5MNIIA3,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9022118,Created,182162,a00N300001I5MNIIA3,,Created,
 9022119,Exist - No Resume,182162,a00N300001I5NEbIAN,,N/A (candidate not in SF),
 9022120,Created,182162,a00N300001I5MMGIA3,,Created,
 9022121,Created,182162,a00N300001I3POnIAN,,Created,
@@ -5544,7 +5544,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9022130,Exist - No Resume,182162,a00N300001I5NENIA3,,N/A (candidate not in SF),
 9022131,Created,182162,a00N300001I5MFCIA3,,Created,
 9022133,Created,179306,a00N300001I5MMxIAN,,Created,
-9022137,Exist - No Resume,181707,a00N300001HTd8aIAD,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9022137,Created,181707,a00N300001HTd8aIAD,,Created,
 9022138,Created,181707,a00N300001I5Mr3IAF,,Created,
 9022139,Created,182162,a00N300001I2nZnIAJ,,Created,
 9022140,Created,179303,a00N300001I5MovIAF,,Created,
@@ -5568,7 +5568,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9022247,Created,179306,a00N300001I5MrYIAV,,Created,
 9022249,Created,181707,a00N300001I5MIKIA3,,Created,
 9022250,Exist - No Resume,181707,a00N300001I5NDVIA3,,N/A (candidate not in SF),
-9022256,Exist - No Resume,179306,a00N300001I5MEzIAN,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9022256,Created,179306,a00N300001I5MEzIAN,,Created,
 9022257,Created,182162,a00N300001I5MM0IAN,,Created,
 9022258,Created,182162,a00N300001I5MLyIAN,,Created,
 9022260,Created,182162,a00N300001I387uIAB,,Created,
@@ -5612,18 +5612,18 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9022363,Exist - No Resume,182162,a00N300001I5NDpIAN,,N/A (candidate not in SF),
 9022366,Created,179303,a00N300001I5MtPIAV,,Created,
 9022367,Created,181706,a00Af0000018GBbIAM,,Created,
-9022368,Exist - No Resume,182162,a00N300001EvOamIAF,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9022368,Created,182162,a00N300001EvOamIAF,,Created,
 9022373,Created,181706,a00N300001I5MtUIAV,,Created,
 9022373,Created,181707,a00N300001I5MtUIAV,,Created,
 9022375,Created,181706,a00N300001I5MMQIA3,,Created,
 9022379,Created,182162,a00N300001I5Mu8IAF,,Created,
 9022380,Created,182162,a00N300001I5MvdIAF,,Created,
 9022381,Created,182162,a00N300001I5MMXIA3,,Created,
-9022388,Exist - No Resume,181708,a00N300001E3qT5IAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9022388,Created,181708,a00N300001E3qT5IAJ,,Created,
 9022389,Created,179306,a00N300001HdO1oIAF,,Created,
 9022390,Exist - No Resume,182162,a00N300001I5NCSIA3,,N/A (candidate not in SF),
 9022392,Created,182162,a00N300001I5MobIAF,,Created,
-9022539,Exist - No Resume,179303,a00N3000018Wk5yIAC,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9022539,Created,179303,a00N3000018Wk5yIAC,,Created,
 9022540,Created,179306,a00N300001HXk0KIAT,,Created,
 9022541,Created,182162,a00N300001I5MF6IAN,,Created,
 9022544,Created,181706,a00N300001I5MoZIAV,,Created,
@@ -5636,14 +5636,14 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9022554,Exist - No Resume,182162,a00N300001I5NDxIAN,,N/A (candidate not in SF),
 9022555,Created,179303,a00N300001I5FJfIAN,,Created,
 9022558,Created,179303,a00N300001HZrFGIA1,,Created,
-9022561,Exist - No Resume,179303,a00N300001G0FOsIAN,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9022561,Created,179303,a00N300001G0FOsIAN,,Created,
 9022594,Exist - No Resume,181706,a00N300001I5ND8IAN,,N/A (candidate not in SF),
 9022607,Created,181707,a00N300001Hd7QjIAJ,,Created,
 9022609,Created,179303,a00N300001HdGgvIAF,,Created,
 9022611,Created,179303,a00N300001I5MN3IAN,,Created,
 9022613,Created,181706,a00N300001I5MGWIA3,,Created,
 9022616,Created,181708,a00N300001I5PCcIAN,,Created,
-9022619,Exist - No Resume,179303,a00N300001GBIKWIA5,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9022619,Created,179303,a00N300001GBIKWIA5,,Created,
 9022622,Created,181706,a00N300001I5MtDIAV,,Created,
 9022625,Exist - No Resume,181707,a00N300001I5RWPIA3,,N/A (candidate not in SF),
 9022639,Created,182162,a00N300001I5MsGIAV,,Created,
@@ -5659,8 +5659,8 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9022682,Created,181707,a00N300001I5MIxIAN,,Created,
 9022683,Exist - No Resume,182162,a00N300001I5NDOIA3,,N/A (candidate not in SF),
 9022685,Exist - No Resume,181706,a00N300001I5aOiIAJ,,N/A (candidate not in SF),
-9022687,Exist - No Resume,181706,a00N300001BdYMoIAN,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9022687,Exist - No Resume,181708,a00N300001BdYMoIAN,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9022687,Created,181706,a00N300001BdYMoIAN,,Created,
+9022687,Created,181708,a00N300001BdYMoIAN,,Created,
 9022691,Created,179303,a00N300001HcYUfIAN,,Created,
 9022691,Created,179306,a00N300001HcYUfIAN,,Created,
 9022692,Exist - No Resume,179306,a00N300001HigxJIAR,,N/A (candidate not in SF),
@@ -5668,7 +5668,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9022693,Created,182162,a00N300001I5MN0IAN,,Created,
 9022695,Created,182162,a00N300001HcJInIAN,,Created,
 9022699,Created,181706,a00N300001I5MqeIAF,,Created,
-9022700,Exist - No Resume,179306,a00N300001Hg9vtIAB,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9022700,Created,179306,a00N300001Hg9vtIAB,,Created,
 9022701,Created,182364,a00N300001I5MLOIA3,,Created,
 9022703,Created,181706,a00N300001I5MvRIAV,,Created,
 9022705,Created,182162,a00N300001I5MFUIA3,,Created,
@@ -5679,7 +5679,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9022746,Created,181708,a00N300001I5MNsIAN,,Created,
 9022748,Created,181707,a00N300001DygFhIAJ,,Created,
 9022751,Created,182162,a00N300001I5MoCIAV,,Created,
-9022752,Exist - No Resume,181706,a00N300001FR6pnIAD,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9022752,Created,181706,a00N300001FR6pnIAD,,Created,
 9022761,Created,182162,a00N300001I5Mu4IAF,,Created,
 9022783,Created,179303,a00N300001I5MNCIA3,,Created,
 9022785,Created,181708,a00N300001EgzOMIAZ,,Created,
@@ -5688,7 +5688,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9022789,Created,179303,a00N300001I5MMTIA3,,Created,
 9022791,Created,182162,a00N300001I5MIEIA3,,Created,
 9022806,Created,179306,a00N300001HbkL4IAJ,,Created,
-9022809,Exist - No Resume,181706,a00N300001FS9SJIA1,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9022809,Created,181706,a00N300001FS9SJIA1,,Created,
 9022810,Created,182162,a00N300001I5MLxIAN,,Created,
 9022813,Created,182162,a00N300001I5MNTIA3,,Created,
 9022817,Created,181706,a00N300001AH1eMIAT,,Created,
@@ -5697,7 +5697,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9022821,Created,182364,a00N300001I5MNPIA3,,Created,
 9022826,Created,182162,a00N300001I5MphIAF,,Created,
 9022828,Created,181706,a00N300001GwfcDIAR,,Created,
-9022831,Exist - No Resume,181707,a00N300001EJwnnIAD,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9022831,Created,181707,a00N300001EJwnnIAD,,Created,
 9022832,Created,182162,a00N300001I5MuWIAV,,Created,
 9022835,Created,182162,a00N300001I5MvyIAF,,Created,
 9022841,Created,181707,a00N300001I5MoTIAV,,Created,
@@ -5735,7 +5735,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9022937,Created,181707,a00N300001I5MI2IAN,,Created,
 9022939,Exist - No Resume,179306,a00N300001Hs2H4IAJ,,N/A (candidate not in SF),
 9022941,Created,182162,a00N300001I5MNcIAN,,Created,
-9022943,Exist - No Resume,181708,a00N300001FdwEPIAZ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9022943,Created,181708,a00N300001FdwEPIAZ,,Created,
 9022945,Exist - No Resume,179303,a00N300001I5NEaIAN,,N/A (candidate not in SF),
 9022948,Created,181706,a00N300001I5MJyIAN,,Created,
 9022949,Created,179303,a00N300001HsMHaIAN,,Created,
@@ -5747,7 +5747,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9022989,Created,182364,a00N300001I5MKoIAN,,Created,
 9022990,Created,182162,a00N300001I5MJJIA3,,Created,
 9022996,Created,182162,a00N300001I5MF3IAN,,Created,
-9022998,Exist - No Resume,182162,a00N300001I5aOZIAZ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9022998,Created,182162,a00N300001I5aOZIAZ,,Created,
 9023001,Exist - No Resume,179303,a00N300001I5NDFIA3,,N/A (candidate not in SF),
 9023009,Created,182162,a00N300001I5MG2IAN,,Created,
 9023012,Created,182162,a00N300001I5MtzIAF,,Created,
@@ -5760,8 +5760,8 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9023022,Created,179303,a00N300001I5MGQIA3,,Created,
 9023023,Created,179303,a00N300001FH9qlIAD,,Created,
 9023054,Created,181706,a00N300001I5MtXIAV,,Created,
-9023056,Exist - No Resume,182162,a00N300001I5aOfIAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
-9023060,Exist - No Resume,179303,a00N300001EbnZ9IAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9023056,Created,182162,a00N300001I5aOfIAJ,,Created,
+9023060,Created,179303,a00N300001EbnZ9IAJ,,Created,
 9023061,Created,181706,a00N300001I5Ms2IAF,,Created,
 9023063,Created,179303,a00N300001FXqmgIAD,,Created,
 9023065,Created,179303,a00N300001I5MplIAF,,Created,
@@ -5785,7 +5785,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9023128,Created,182162,a00N300001I5MMAIA3,,Created,
 9023147,Created,179306,a00N300001I5MKlIAN,,Created,
 9023148,Created,179306,a00N300001I5MFqIAN,,Created,
-9023149,Exist - No Resume,182162,a00N300001I3SxlIAF,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9023149,Created,182162,a00N300001I3SxlIAF,,Created,
 9023152,Created,182162,a00N300001I5MLvIAN,,Created,
 9023154,Created,181706,a00N300001I5MvzIAF,,Created,
 9023160,Exist - No Resume,181708,a00N300001FpsDVIAZ,,N/A (candidate not in SF),
@@ -5795,7 +5795,7 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9023166,Created,181706,a00N300001I5MLPIA3,,Created,
 9023166,Created,181707,a00N300001I5MLPIA3,,Created,
 9023166,Created,179303,a00N300001I5MLPIA3,,Created,
-9023168,Exist - No Resume,181708,a00N300001I5aOeIAJ,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9023168,Created,181708,a00N300001I5aOeIAJ,,Created,
 9023169,Created,181706,a00N300001I5MKRIA3,,Created,
 9023170,Exist - No Resume,181706,a00N300001I5NCcIAN,,N/A (candidate not in SF),
 9023172,Not Exist,181707,,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
@@ -5804,5 +5804,5 @@ Person ID,Exists,Job ID,Candidate_SF_Id,Job_SF_Id,Job_Submission_Exists,Error
 9023180,Exist - No Resume,179303,a00N300001G1zflIAB,,N/A (candidate not in SF),
 9023182,Created,181706,a00N300001I5MLmIAN,,Created,
 9023185,Created,179303,a00N300001I5MqYIAV,,Created,
-9023209,Exist - No Resume,179303,a00N300001APYmiIAH,,N/A (candidate not in SF),No matching Candidate__c found for OpptlyPersonId
+9023209,Created,179303,a00N300001APYmiIAH,,Created,
 9023212,Created,179306,a00N300001I5MFBIA3,,Created,
