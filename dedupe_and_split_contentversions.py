@@ -33,12 +33,14 @@ Each record looks like:
 Usage:
     pip install requests beautifulsoup4
     python dedupe_and_split_contentversions.py https://jobs.opptly.com/PublicLists/<list-id>
-    python dedupe_and_split_contentversions.py <url> --missing-only candidates_existence_check.json
+    python dedupe_and_split_contentversions.py <url> --status "Not Exist"
+    python dedupe_and_split_contentversions.py <url> --status "Exist - No Resume" --status-csv candidates_existence_check.csv
     python dedupe_and_split_contentversions.py <url> -o contentversions.json --chunk-size 200
 """
 
 import argparse
 import base64
+import csv
 import json
 import os
 import sys
@@ -127,9 +129,18 @@ def keep_last_per_person(rows: list) -> list:
     return [last_by_person[pid] for pid in order] + no_person_id
 
 
-def load_missing_ids(path: str) -> set:
-    with open(path, "r", encoding="utf-8") as f:
-        return set(json.load(f)["missing"])
+def load_status_ids(csv_path: str, status: str) -> set:
+    """Person IDs from candidates_existence_check.csv whose Exists column
+    matches the given status, e.g. 'Not Exist' or 'Exist - No Resume'."""
+    ids = set()
+    with open(csv_path, "r", encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            if row.get("Exists") == status:
+                pid = row.get("Person ID")
+                if pid:
+                    ids.add(pid)
+    return ids
 
 
 def download_resume(
@@ -273,11 +284,15 @@ def main():
         "--chunk-size", type=int, default=200, help="Records per output file"
     )
     parser.add_argument(
-        "--missing-only",
-        metavar="EXISTENCE_CHECK_JSON",
+        "--status",
         default=None,
-        help="Path to a candidates_existence_check.json file; only process "
-        "candidates listed under its 'missing' key (skip ones already in SF)",
+        help="Only process candidates whose Exists column in --status-csv "
+        "matches this value, e.g. 'Not Exist' or 'Exist - No Resume'",
+    )
+    parser.add_argument(
+        "--status-csv",
+        default="candidates_existence_check.csv",
+        help="candidates_existence_check.csv to read --status from",
     )
     parser.add_argument(
         "--limit", type=int, default=None, help="Only process the first N candidates (testing)"
@@ -320,13 +335,13 @@ def main():
     rows = keep_last_per_person(rows)
     print(f"{len(rows)} unique candidates after keeping last resume per OpptlyPersonId", file=sys.stderr)
 
-    if args.missing_only:
-        missing_ids = load_missing_ids(args.missing_only)
+    if args.status:
+        status_ids = load_status_ids(args.status_csv, args.status)
         before = len(rows)
-        rows = [r for r in rows if r["person_id"] in missing_ids]
+        rows = [r for r in rows if r["person_id"] in status_ids]
         print(
-            f"--missing-only: kept {len(rows)}/{before} candidates present in "
-            f"{args.missing_only}'s 'missing' list",
+            f"--status '{args.status}': kept {len(rows)}/{before} candidates "
+            f"matching that status in {args.status_csv}",
             file=sys.stderr,
         )
 

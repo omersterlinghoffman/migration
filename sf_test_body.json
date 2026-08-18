@@ -1,0 +1,14 @@
+{
+    "allOrNone": false,
+    "records": [
+        {
+            "attributes": {
+                "type": "ContentVersion"
+            },
+            "Title": "test-upload",
+            "PathOnClient": "test-upload.txt",
+            "VersionData": "aGVsbG8gd29ybGQ=",
+            "FirstPublishLocationId": "a004x00000J1Q5SAAV"
+        }
+    ]
+}
