@@ -242,10 +242,14 @@ def main():
     for row in existence_rows:
         rows_by_person_id.setdefault(row.get("Person ID"), []).append(row)
 
-    def mark_existence(pid: str, status: str, error: str = "") -> None:
+    def mark_existence(pid: str, status: str, error: str = "", candidate_id: str = None) -> None:
         for row in rows_by_person_id.get(pid, []):
             row["Exists"] = status
             row["Error"] = error
+            if candidate_id:
+                row["Candidate_SF_Id"] = candidate_id
+            if status == "Created":
+                row["Job_Submission_Exists"] = "Created"
 
     ready = []
     unmatched = []
@@ -261,6 +265,7 @@ def main():
             "PathOnClient": rec.get("PathOnClient"),
             "VersionData": rec.get("VersionData"),
             "FirstPublishLocationId": candidate_id,
+            "Onboarding_File_Type_fileupload__c": "RESUME",
         }
         ready.append((path, idx, rec, candidate_id, sf_record))
 
@@ -284,11 +289,18 @@ def main():
             pid = rec.get("OpptlyPersonId")
             if result.get("success"):
                 pushed_count += 1
+                content_version_id = result.get("id")
+                print(
+                    f"  [OK] OpptlyPersonId={pid} CandidateId={candidate_id} "
+                    f"ContentVersionId={content_version_id} ({rec.get('FullName')})",
+                    file=sys.stderr,
+                )
                 append_pushed(
                     pushed_log,
                     {
                         "OpptlyPersonId": pid,
-                        "ContentVersionId": result.get("id"),
+                        "ContentVersionId": content_version_id,
+                        "CandidateId": candidate_id,
                         "FullName": rec.get("FullName"),
                     },
                 )
@@ -300,7 +312,7 @@ def main():
                 chunks[path][idx] = rec
                 changed_chunk_paths.add(path)
 
-                mark_existence(pid, "Created")
+                mark_existence(pid, "Created", candidate_id=candidate_id)
             else:
                 failed_count += 1
                 error_msg = json.dumps(result.get("errors"))
