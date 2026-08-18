@@ -81,9 +81,10 @@ def parse_rows(html: str, base_url: str):
         if len(cells) < len(COLUMNS):
             continue  # skip header / malformed rows
 
-        link = cells[0].find("a")
-        if link is None or not link.get("href"):
+        links = [a for a in cells[0].find_all("a") if a.get("href")]
+        if not links:
             continue  # row without an attached resume
+        link = links[-1]  # a row can list multiple attachments; use the last one
 
         resume_url = urljoin(base_dir, link["href"])
         resume_filename = link.get_text(strip=True)
@@ -94,6 +95,22 @@ def parse_rows(html: str, base_url: str):
         records.append(record)
 
     return records
+
+
+def keep_last_per_person(rows: list) -> list:
+    last_by_person = {}
+    no_person_id = []
+    order = []
+    for record in rows:
+        pid = record["person_id"]
+        if not pid:
+            no_person_id.append(record)
+            continue
+        if pid not in last_by_person:
+            order.append(pid)
+        last_by_person[pid] = record  # later rows overwrite earlier ones
+
+    return [last_by_person[pid] for pid in order] + no_person_id
 
 
 def download_resume(
@@ -142,34 +159,63 @@ def build_contentversion(record: dict, resume_bytes: bytes) -> dict:
     }
 
 
-def dedupe_by_person_id(output: list) -> list:
+def ndjson_path_for(output_path: str) -> str:
+    root, _ext = os.path.splitext(output_path)
+    return root + ".ndjson"
+
+
+def append_record(ndjson_path: str, record: dict) -> None:
+    # Append-only, O(1) per record -- never re-reads or rewrites prior records.
+    with open(ndjson_path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(record, separators=(",", ":")))
+        f.write("\n")
+
+
+def load_seen_person_ids(ndjson_path: str) -> tuple:
+    """Stream the ndjson scratch file to recover state from a prior run,
+    without holding every record (including its base64 payload) in memory."""
     seen = set()
-    deduped = []
-    for r in output:
-        pid = r.get("OpptlyPersonId")
-        if pid and pid in seen:
-            continue
-        if pid:
-            seen.add(pid)
-        deduped.append(r)
-    return deduped
+    count = 0
+    if not os.path.exists(ndjson_path):
+        return seen, count
+    with open(ndjson_path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            count += 1
+            try:
+                pid = json.loads(line).get("OpptlyPersonId")
+            except json.JSONDecodeError:
+                continue
+            if pid:
+                seen.add(pid)
+    return seen, count
 
 
-def write_output(path: str, output: list) -> list:
-    output = dedupe_by_person_id(output)
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(output, f, indent=2)
-    return output
+def finalize_json_array(ndjson_path: str, output_path: str) -> None:
+    """Assemble the final JSON array by text-streaming the already-valid
+    ndjson lines -- no per-record decode/encode, so this stays cheap even
+    at hundreds of MB."""
+    if not os.path.exists(ndjson_path):
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write("[]")
+        return
 
-
-def load_existing_output(path: str) -> list:
-    if not os.path.exists(path):
-        return []
-    with open(path, "r", encoding="utf-8") as f:
-        try:
-            return json.load(f)
-        except json.JSONDecodeError:
-            return []
+    with open(ndjson_path, "r", encoding="utf-8") as fin, open(
+        output_path, "w", encoding="utf-8"
+    ) as fout:
+        fout.write("[")
+        first = True
+        for line in fin:
+            line = line.strip()
+            if not line:
+                continue
+            if not first:
+                fout.write(",")
+            fout.write(line)
+            first = False
+        fout.write("]")
 
 
 def main():
@@ -188,7 +234,8 @@ def main():
         "--save-every",
         type=int,
         default=100,
-        help="Write a checkpoint of the JSON output every N processed records",
+        help="Refresh the JSON array output every N processed records "
+        "(each record is durably appended immediately regardless)",
     )
     parser.add_argument(
         "--desc",
@@ -207,6 +254,13 @@ def main():
         default=2.0,
         help="Base seconds to wait between resume fetch retries (doubles each attempt)",
     )
+    parser.add_argument(
+        "--missing-only",
+        metavar="EXISTENCE_CHECK_JSON",
+        default=None,
+        help="Path to a candidates_existence_check.json file; only process "
+        "candidates listed under its 'missing' key (skip ones already in SF)",
+    )
     args = parser.parse_args()
 
     session = requests.Session()
@@ -217,6 +271,20 @@ def main():
     rows = parse_rows(html, args.url)
     print(f"Found {len(rows)} candidate rows with resumes", file=sys.stderr)
 
+    rows = keep_last_per_person(rows)
+    print(f"{len(rows)} unique candidates after keeping last resume per OpptlyPersonId", file=sys.stderr)
+
+    if args.missing_only:
+        with open(args.missing_only, "r", encoding="utf-8") as f:
+            missing_ids = set(json.load(f)["missing"])
+        before = len(rows)
+        rows = [r for r in rows if r["person_id"] in missing_ids]
+        print(
+            f"--missing-only: kept {len(rows)}/{before} candidates present in "
+            f"{args.missing_only}'s 'missing' list",
+            file=sys.stderr,
+        )
+
     if args.desc:
         rows.sort(key=lambda r: r["full_name"].lower(), reverse=True)
 
@@ -225,18 +293,19 @@ def main():
 
     total = len(rows)
     cache = {}
-    output = load_existing_output(args.output)
-    seen_person_ids = {r.get("OpptlyPersonId") for r in output if r.get("OpptlyPersonId")}
+    ndjson_path = ndjson_path_for(args.output)
+    seen_person_ids, existing_count = load_seen_person_ids(ndjson_path)
+    processed = existing_count
     if seen_person_ids:
         print(
-            f"Loaded {len(output)} existing records from {args.output} "
-            f"({len(seen_person_ids)} unique OpptlyPersonId already saved)",
+            f"Resuming from {ndjson_path}: {existing_count} records already saved "
+            f"({len(seen_person_ids)} unique OpptlyPersonId)",
             file=sys.stderr,
         )
 
     for current, record in enumerate(rows, 1):
         person_id = record["person_id"]
-        progress = f"[current {current}/{total} | processed {len(output)}]"
+        progress = f"[current {current}/{total} | processed {processed}]"
 
         if person_id and person_id in seen_person_ids:
             print(
@@ -261,19 +330,21 @@ def main():
             print(f"  !! failed to download resume after {args.retries} attempts: {exc}", file=sys.stderr)
             continue
 
-        output.append(build_contentversion(record, resume_bytes))
+        # Append-only write: O(1), never rereads or rewrites prior records.
+        append_record(ndjson_path, build_contentversion(record, resume_bytes))
         if person_id:
             seen_person_ids.add(person_id)
+        processed += 1
 
-        if len(output) % args.save_every == 0:
-            output = write_output(args.output, output)
-            print(f"  -- checkpoint saved ({len(output)} records) --", file=sys.stderr)
+        if processed % args.save_every == 0:
+            finalize_json_array(ndjson_path, args.output)
+            print(f"  -- {args.output} refreshed ({processed} records) --", file=sys.stderr)
 
         time.sleep(args.delay)
 
-    output = write_output(args.output, output)
+    finalize_json_array(ndjson_path, args.output)
 
-    print(f"Wrote {len(output)} ContentVersion records to {args.output}", file=sys.stderr)
+    print(f"Wrote {processed} ContentVersion records to {args.output}", file=sys.stderr)
 
 
 if __name__ == "__main__":
