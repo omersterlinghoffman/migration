@@ -57,11 +57,50 @@ COLUMNS = [
     "country",
 ]
 
+# Maps the header text Opptly renders for each column (lowercased) to the
+# field name used in a record. Some lists (e.g. ones not tied to specific
+# job postings) omit the job_id/job_title/job_step columns entirely, so
+# columns are matched by header name rather than fixed position/count.
+HEADER_TO_FIELD = {
+    "attached files - resume": "resume_link",
+    "full name": "full_name",
+    "person id": "person_id",
+    "all emails": "emails",
+    "mobile phones": "mobile_phones",
+    "all phone numbers": "all_phones",
+    "job id": "job_id",
+    "job title": "job_title",
+    "job step": "job_step",
+    "last note": "last_note",
+    "all streets": "street",
+    "all cities": "city",
+    "all states/provinces": "state",
+    "all postal codes": "postal_code",
+    "all countries": "country",
+}
+
 
 def fetch_html(url: str, session: requests.Session) -> str:
     resp = session.get(url, headers={"User-Agent": USER_AGENT}, timeout=60)
     resp.raise_for_status()
     return resp.text
+
+
+def parse_header(table) -> list:
+    """Return the field name (per HEADER_TO_FIELD) for each column, in
+    order, by reading the table's header row. Falls back to the legacy
+    fixed COLUMNS order if no recognizable header row is found."""
+    header_row = table.find("tr")
+    if header_row is not None:
+        header_cells = header_row.find_all("th")
+        if not header_cells:
+            header_cells = header_row.find_all("td")
+        headers = [c.get_text(strip=True).lower() for c in header_cells]
+        fields = [HEADER_TO_FIELD.get(h) for h in headers]
+        if fields and all(fields):
+            return fields
+
+    return list(COLUMNS)
 
 
 def parse_rows(html: str, base_url: str):
@@ -70,18 +109,22 @@ def parse_rows(html: str, base_url: str):
     if table is None:
         raise RuntimeError("No <table> found on page")
 
+    fields = parse_header(table)
+
     # Attachment hrefs are like "<list-id>/Attachment:<id>", relative to the
     # PublicLists/ directory (i.e. one level above the list page itself).
     base_dir = base_url.rsplit("/", 1)[0] + "/"
+
+    resume_idx = fields.index("resume_link")
 
     rows = table.find_all("tr")
     records = []
     for tr in rows:
         cells = tr.find_all("td")
-        if len(cells) < len(COLUMNS):
+        if len(cells) < len(fields):
             continue  # skip header / malformed rows
 
-        links = [a for a in cells[0].find_all("a") if a.get("href")]
+        links = [a for a in cells[resume_idx].find_all("a") if a.get("href")]
         if not links:
             continue  # row without an attached resume
         link = links[-1]  # a row can list multiple attachments; use the last one
@@ -89,7 +132,15 @@ def parse_rows(html: str, base_url: str):
         resume_url = urljoin(base_dir, link["href"])
         resume_filename = link.get_text(strip=True)
 
-        record = dict(zip(COLUMNS[1:], (c.get_text(strip=True) for c in cells[1:])))
+        record = {
+            field: cells[i].get_text(strip=True)
+            for i, field in enumerate(fields)
+            if field != "resume_link"
+        }
+        # Columns absent from this list's layout (e.g. job_id/job_title/job_step
+        # on lists not tied to a specific job posting) default to empty.
+        for field in COLUMNS:
+            record.setdefault(field, "")
         record["resume_url"] = resume_url
         record["resume_filename"] = resume_filename
         records.append(record)
