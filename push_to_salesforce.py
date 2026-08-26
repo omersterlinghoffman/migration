@@ -145,15 +145,29 @@ def push_batch(sf_records: list, target_org: str, api_version: str) -> list:
         os.unlink(body_path)
 
 
+EXISTENCE_CSV_DEFAULT_FIELDS = [
+    "Person ID",
+    "Full Name",
+    "Exists",
+    "Candidate_SF_Id",
+    "Job_Submission_Exists",
+    "Response",
+    "Error",
+]
+
+
 def load_existence_csv(path: str) -> tuple:
+    if not os.path.exists(path):
+        return list(EXISTENCE_CSV_DEFAULT_FIELDS), []
     with open(path, "r", encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
         fieldnames = list(reader.fieldnames)
         rows = list(reader)
-    if "Error" not in fieldnames:
-        fieldnames.append("Error")
-        for row in rows:
-            row["Error"] = ""
+    for extra in ("Error", "Response"):
+        if extra not in fieldnames:
+            fieldnames.append(extra)
+            for row in rows:
+                row[extra] = ""
     return fieldnames, rows
 
 
@@ -242,14 +256,28 @@ def main():
     for row in existence_rows:
         rows_by_person_id.setdefault(row.get("Person ID"), []).append(row)
 
-    def mark_existence(pid: str, status: str, error: str = "", candidate_id: str = None) -> None:
-        for row in rows_by_person_id.get(pid, []):
+    def mark_existence(
+        pid: str, status: str, error: str = "", candidate_id: str = None,
+        response: str = "", full_name: str = None,
+    ) -> None:
+        rows = rows_by_person_id.get(pid)
+        if not rows:
+            row = {field: "" for field in existence_fieldnames}
+            row["Person ID"] = pid
+            existence_rows.append(row)
+            rows_by_person_id[pid] = [row]
+            rows = [row]
+        for row in rows:
             row["Exists"] = status
             row["Error"] = error
+            row["Response"] = response
+            if full_name:
+                row["Full Name"] = full_name
             if candidate_id:
                 row["Candidate_SF_Id"] = candidate_id
             if status == "Created":
                 row["Job_Submission_Exists"] = "Created"
+        write_existence_csv(args.existence_csv, existence_fieldnames, existence_rows)
 
     ready = []
     unmatched = []
@@ -274,7 +302,10 @@ def main():
         for path, idx, rec in unmatched:
             pid = rec.get("OpptlyPersonId")
             print(f"     - OpptlyPersonId {pid} ({rec.get('FullName')})", file=sys.stderr)
-            mark_existence(pid, "Error", "No matching Candidate__c found for OpptlyPersonId")
+            mark_existence(
+                pid, "Error", "No matching Candidate__c found for OpptlyPersonId",
+                full_name=rec.get("FullName"),
+            )
 
     pushed_count = 0
     failed_count = 0
@@ -312,12 +343,20 @@ def main():
                 chunks[path][idx] = rec
                 changed_chunk_paths.add(path)
 
-                mark_existence(pid, "Created", candidate_id=candidate_id)
+                mark_existence(
+                    pid, "Created", candidate_id=candidate_id,
+                    response=f"ContentVersionId={content_version_id}",
+                    full_name=rec.get("FullName"),
+                )
             else:
                 failed_count += 1
                 error_msg = json.dumps(result.get("errors"))
                 print(f"  !! push failed for OpptlyPersonId {pid}: {error_msg}", file=sys.stderr)
-                mark_existence(pid, "Error", error_msg)
+                mark_existence(
+                    pid, "Error", error_msg,
+                    response=json.dumps(result),
+                    full_name=rec.get("FullName"),
+                )
 
         print(f"  -- pushed batch of {len(batch)} ({pushed_count} succeeded so far) --", file=sys.stderr)
 
