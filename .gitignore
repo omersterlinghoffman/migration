@@ -9,3 +9,6 @@ contentversions_backup_18.json
 contentversions_backup.json
 contentversions_backup_18_123.json
 contentversionsWithLastResume.ndjson
+Last_Migration/
+Last_Migration/contentversions_no_resume.json
+Last_Migration/contentversions_no_resume.ndjson
