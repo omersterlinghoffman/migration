@@ -163,6 +163,28 @@ def load_existence_csv(path: str) -> tuple:
         reader = csv.DictReader(f)
         fieldnames = list(reader.fieldnames)
         rows = list(reader)
+
+    # A real header always contains "Person ID". If it doesn't, row 1 was
+    # actually data (the file has no header row -- or was already
+    # corrupted this same way) and got consumed as fieldnames instead,
+    # which crashes later writes. Recover by treating every row, including
+    # row 1, as data mapped positionally onto the canonical layout.
+    if "Person ID" not in fieldnames:
+        print(
+            f"  !! {path} has no valid header row; rebuilding with canonical headers",
+            file=sys.stderr,
+        )
+        with open(path, "r", encoding="utf-8", newline="") as f:
+            raw_rows = list(csv.reader(f))
+        fieldnames = list(EXISTENCE_CSV_DEFAULT_FIELDS)
+        rows = []
+        for raw in raw_rows:
+            row = {field: "" for field in fieldnames}
+            for field, value in zip(fieldnames, raw):
+                row[field] = value
+            rows.append(row)
+        return fieldnames, rows
+
     for extra in ("Error", "Response"):
         if extra not in fieldnames:
             fieldnames.append(extra)
